@@ -1,0 +1,154 @@
+# SPDX-FileCopyrightText: Copyright © 2025 Jarred C Lloyd 4o8pg2v9h@mozmail.com
+#
+# SPDX-License-Identifier: MPL-2.0
+
+## Basic Reference Material Structure - copy this and fill out as appropriate for new RMs
+# - refmatID: RefMatID (should be a single string with no special characters or white space)
+#   name:  published name of ref mat (e.g. NIST SRM 610)
+#   material: class of material (e.g. glass)
+#   aliases: [alias 1, alias 2]
+#   references: [ref 1, ref 2]
+#   elemental_concentrations:
+#     H: [val, uncert, unit]
+#   isotopic_abundances:
+#     Sr88: 0.8258 (i.e. the fractional abundance)
+#   ratio_data:
+#     Rb85Sr87: [value, uncert, atomic/mass] (last value, is ratio by atoms or mass)
+#   age_data: [system, value, uncert, unit] (e.g. [U238Pb206, 600, 1, Myr])
+
+
+# Uncertainties are 1SE
+
+- refmatID: NIST610
+  name: NIST SRM 610
+  material: glass
+  aliases: [NIST610, NIST 610]
+  references: [JochumEtAl2011 doi:10.1111/j.1751-908X.2011.00120.x]
+  elemental_concentrations:
+    Ag: [251.0, 9.0, ppm]
+    Al: [10797, 0, ppm]
+    As: [325.0, 18.0, ppm]
+    Au: [23.6, 1.7, ppm]
+    B: [350.0, 56.0, ppm]
+    Ba: [452.0, 9.0, ppm]
+    Be: [476.0, 31.0, ppm]
+    Bi: [384.0, 26.0, ppm]
+    Ca: [82144, 0, ppm]
+    Cd: [270.0, 16.0, ppm]
+    Ce: [453.0, 8.0, ppm]
+    Cl: [274.0, 67.0, ppm]
+    Co: [410.0, 10.0, ppm]
+    Cr: [408.0, 10.0, ppm]
+    Cs: [366.0, 9.0, ppm]
+    Cu: [441.0, 15.0, ppm]
+    Dy: [437.0, 11.0, ppm]
+    Er: [455.0, 14.0, ppm]
+    Eu: [447.0, 12.0, ppm]
+    F: [304.0, 0, ppm]
+    Fe: [458.0, 9.0, ppm]
+    Ga: [433.0, 13.0, ppm]
+    Gd: [449.0, 12.0, ppm]
+    Ge: [447.0, 78.0, ppm]
+    Hf: [435.0, 12.0, ppm]
+    Ho: [449.0, 12.0, ppm]
+    In: [434.0, 19.0, ppm]
+    K: [464.0, 21.0, ppm]
+    La: [440.0, 10.0, ppm]
+    Li: [468.0, 24.0, ppm]
+    Lu: [439.0, 8.0, ppm]
+    Mg: [432.0, 29.0, ppm]
+    Mn: [444.0, 13.0, ppm]
+    Mo: [417.0, 21.0, ppm]
+    Na: [99415, 0, ppm]
+    Nb: [465.0, 34.0, ppm]
+    Nd: [430.0, 8.0, ppm]
+    Ni: [458.7, 4.0, ppm]
+    P: [413.0, 46.0, ppm]
+    Pb: [426.0, 1.0, ppm]
+    Pd: [1.21, 0.44, ppm]
+    Pr: [448.0, 7.0, ppm]
+    Pt: [3.12, 0.08, ppm]
+    Rb: [425.7, 1.0, ppm]
+    Re: [49.9, 3.7, ppm]
+    Rh: [1.29, 0.07, ppm]
+    S: [575.0, 32.0, ppm]
+    Sb: [396.0, 19.0, ppm]
+    Sc: [455.0, 10.0, ppm]
+    Se: [138.0, 42.0, ppm]
+    Si: [327180, 0, ppm]
+    Sm: [453.0, 11.0, ppm]
+    Sn: [430.0, 29.0, ppm]
+    Sr: [515.5, 1.0, ppm]
+    Ta: [446.0, 33.0, ppm]
+    Te: [302.0, 0, ppm]
+    Tb: [437.0, 9.0, ppm]
+    Th: [457.2, 1.0, ppm]
+    Ti: [452.0, 10.0, ppm]
+    Tl: [59.6, 2.8, ppm]
+    Tm: [435.0, 10.0, ppm]
+    U: [461.5, 1.0, ppm]
+    V: [450.0, 9.0, ppm]
+    W: [444.0, 29.0, ppm]
+    Y: [462.0, 11.0, ppm]
+    Yb: [450.0, 9.0, ppm]
+    Zn: [460.0, 18.0, ppm]
+    Zr: [448.0, 9.0, ppm]
+  isotopic_abundances:
+    Pb206: 24.172847560
+    Pb207: 21.987434941
+    Pb208: 52.421539291
+    U234: 0.001817922
+    U235: 0.238090910
+    U238: 99.760091169
+  ratio_data:
+    B11B10: [4.409, 0, mass]
+    Nd143Nd144: [0.511927, 0, mass]
+    Nd148Nd144: [0.24146, 0, mass]
+    Nd150Nd144: [0.23596, 0, mass]
+    Pb206Pb204: [17.045, 0, atomic]
+    Pb207Pb204: [15.504, 0, atomic]
+    Pb207Pb206: [0.9096, 0, atomic]
+    Pb208Pb204: [36.964, 0, atomic]
+    Pb208Pb206: [2.168, 0, atomic]
+    Sr84Sr88: [0.5655, 0, atomic]
+    Sr87Sr86: [0.709699, 0, atomic]
+    Sr87Sr88: [0.084704, 0, atomic]
+    Rb85Sr87: [3.3683, 0, atomic]
+    Rb85Sr86: [2.391, 0, atomic]
+    K39Ca40: [0.000000703, 0, atomic]
+    K41K39: [0.072170000, 0, atomic]
+    Ca44Ca40: [0.021520000, 0, atomic]
+    Ca42Ca44: [0.310200000, 0, atomic]
+    Hf176Hf177: [0.282122, 0, mass]
+    U238U235: [418.47, 0.378, atomic]
+  age_data: [manufacture, 1970, 0, yr]
+
+- refmatID: G17560
+  name: G17560
+  material: mica
+  aliases: [G17560STD]
+  references:
+  elemental_concentrations:
+    Li: [21683.4, 645.35, ppm]
+    Be: [27.2, 0.515, ppm]
+    B: [126.7, 8.75, ppm]
+    Na: [2513.6, 42.445, ppm]
+    Al: [143414.0, 3509.87, ppm]
+    Si: [228274.0, 792.24, ppm]
+    P: [112.1, 5.08, ppm]
+    K: [72284.94, 778.62, ppm]
+    Ti: [45.71, 3.215, ppm]
+    Mn: [1960.8, 105.5, ppm]
+    Zn: [23.68, 1.045, ppm]
+    Rb: [14176.2, 329.21, ppm]
+    Cs: [2349.38, 100.92, ppm]
+    Ta: [129.72, 9.425, ppm]
+    W: [101.3, 7.1, ppm]
+  isotopic_abundances:
+    Sr88: 0.009662
+    Sr87: 0.989119
+    Sr86: 0.001154
+    Sr84: 0.000066
+  ratio_data:
+    Rb85Sr87: [144.889, 0.137, atomic]
+  age_data: [RbSr, 492.28, 0.535, Myr]
