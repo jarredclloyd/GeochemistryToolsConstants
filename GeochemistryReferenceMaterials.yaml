@@ -5,94 +5,520 @@
 ## Basic Reference Material Structure - copy this and fill out as appropriate for new RMs
 # - refmatID: RefMatID (should be a single string with no special characters or white space)
 #   name:  published name of ref mat (e.g. NIST SRM 610)
+#   description: string based description of material
 #   material: class of material (e.g. glass)
 #   aliases: [alias 1, alias 2]
 #   references: [ref 1, ref 2]
 #   elemental_concentrations:
-#     H: [val, uncert, unit]
+#     H:
+#       value: 251.0
+#       stddev:
+#       stderr:
+#       confint: 9.0
+#       units: ppm
+#       n_obs:
 #   isotopic_abundances:
 #     Sr88: 0.8258 (i.e. the fractional abundance)
-#   ratio_data:
-#     Rb85Sr87: [value, uncert, atomic/mass] (last value, is ratio by atoms or mass)
+#   isotopic_ratios:
+#     Rb85Sr87:
+#       value:
+#       stddev:
+#       stderr:
+#       confint:
+#       type: atomic OR mass (type of ratio)
+#       n_obs:
 #   age_data: [system, value, uncert, unit] (e.g. [U238Pb206, 600, 1, Myr])
 
+# stddev = 2SD, stderr = 2SE, confint = 95%CI
 
-# Uncertainties are 1SE
-
+# NIST SRM 610
 - refmatID: NIST610
   name: NIST SRM 610
+  description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
   aliases: [NIST610, NIST 610]
-  references: [JochumEtAl2011 doi:10.1111/j.1751-908X.2011.00120.x]
+  references:
+    [
+      Kane1998 doi:10.1111/j.1751-908X.1998.tb00541.x,
+      JochumEtAl2011 doi:10.1111/j.1751-908X.2011.00120.x,
+    ]
   elemental_concentrations:
-    Ag: [251.0, 9.0, ppm]
-    Al: [10797, 0, ppm]
-    As: [325.0, 18.0, ppm]
-    Au: [23.6, 1.7, ppm]
-    B: [350.0, 56.0, ppm]
-    Ba: [452.0, 9.0, ppm]
-    Be: [476.0, 31.0, ppm]
-    Bi: [384.0, 26.0, ppm]
-    Ca: [82144, 0, ppm]
-    Cd: [270.0, 16.0, ppm]
-    Ce: [453.0, 8.0, ppm]
-    Cl: [274.0, 67.0, ppm]
-    Co: [410.0, 10.0, ppm]
-    Cr: [408.0, 10.0, ppm]
-    Cs: [366.0, 9.0, ppm]
-    Cu: [441.0, 15.0, ppm]
-    Dy: [437.0, 11.0, ppm]
-    Er: [455.0, 14.0, ppm]
-    Eu: [447.0, 12.0, ppm]
-    F: [304.0, 0, ppm]
-    Fe: [458.0, 9.0, ppm]
-    Ga: [433.0, 13.0, ppm]
-    Gd: [449.0, 12.0, ppm]
-    Ge: [447.0, 78.0, ppm]
-    Hf: [435.0, 12.0, ppm]
-    Ho: [449.0, 12.0, ppm]
-    In: [434.0, 19.0, ppm]
-    K: [464.0, 21.0, ppm]
-    La: [440.0, 10.0, ppm]
-    Li: [468.0, 24.0, ppm]
-    Lu: [439.0, 8.0, ppm]
-    Mg: [432.0, 29.0, ppm]
-    Mn: [444.0, 13.0, ppm]
-    Mo: [417.0, 21.0, ppm]
-    Na: [99415, 0, ppm]
-    Nb: [465.0, 34.0, ppm]
-    Nd: [430.0, 8.0, ppm]
-    Ni: [458.7, 4.0, ppm]
-    P: [413.0, 46.0, ppm]
-    Pb: [426.0, 1.0, ppm]
-    Pd: [1.21, 0.44, ppm]
-    Pr: [448.0, 7.0, ppm]
-    Pt: [3.12, 0.08, ppm]
-    Rb: [425.7, 1.0, ppm]
-    Re: [49.9, 3.7, ppm]
-    Rh: [1.29, 0.07, ppm]
-    S: [575.0, 32.0, ppm]
-    Sb: [396.0, 19.0, ppm]
-    Sc: [455.0, 10.0, ppm]
-    Se: [138.0, 42.0, ppm]
-    Si: [327180, 0, ppm]
-    Sm: [453.0, 11.0, ppm]
-    Sn: [430.0, 29.0, ppm]
-    Sr: [515.5, 1.0, ppm]
-    Ta: [446.0, 33.0, ppm]
-    Te: [302.0, 0, ppm]
-    Tb: [437.0, 9.0, ppm]
-    Th: [457.2, 1.0, ppm]
-    Ti: [452.0, 10.0, ppm]
-    Tl: [59.6, 2.8, ppm]
-    Tm: [435.0, 10.0, ppm]
-    U: [461.5, 1.0, ppm]
-    V: [450.0, 9.0, ppm]
-    W: [444.0, 29.0, ppm]
-    Y: [462.0, 11.0, ppm]
-    Yb: [450.0, 9.0, ppm]
-    Zn: [460.0, 18.0, ppm]
-    Zr: [448.0, 9.0, ppm]
+    Ag:
+      value: 251.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
+    Al:
+      value: 10797,
+      stddev:
+      stderr:
+      confint: 0
+      units: ppm
+      n_obs:
+    As:
+      value: 325.0
+      stddev:
+      stderr:
+      confint: 18.0
+      units: ppm
+      n_obs:
+    Au:
+      value: 23.6
+      stddev:
+      stderr:
+      confint: 1.7
+      units: ppm
+      n_obs:
+    B:
+      value: 350.0
+      stddev:
+      stderr:
+      confint: 56.0
+      units: ppm
+      n_obs:
+    Ba:
+      value: 452.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
+    Be:
+      value: 476.0
+      stddev:
+      stderr:
+      confint: 31.0
+      units: ppm
+      n_obs:
+    Bi:
+      value: 384.0
+      stddev:
+      stderr:
+      confint: 26.0
+      units: ppm
+      n_obs:
+    Ca:
+      value: 82144,
+      stddev:
+      stderr:
+      confint: 0
+      units: ppm
+      n_obs:
+    Cd:
+      value: 270.0
+      stddev:
+      stderr:
+      confint: 16.0
+      units: ppm
+      n_obs:
+    Ce:
+      value: 453.0
+      stddev:
+      stderr:
+      confint: 8.0
+      units: ppm
+      n_obs:
+    Cl:
+      value: 274.0
+      stddev:
+      stderr:
+      confint: 67.0
+      units: ppm
+      n_obs:
+    Co:
+      value: 410.0
+      stddev:
+      stderr:
+      confint: 10.0
+      units: ppm
+      n_obs:
+    Cr:
+      value: 408.0
+      stddev:
+      stderr:
+      confint: 10.0
+      units: ppm
+      n_obs:
+    Cs:
+      value: 366.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
+    Cu:
+      value: 441.0
+      stddev:
+      stderr:
+      confint: 15.0
+      units: ppm
+      n_obs:
+    Dy:
+      value: 437.0
+      stddev:
+      stderr:
+      confint: 11.0
+      units: ppm
+      n_obs:
+    Er:
+      value: 455.0
+      stddev:
+      stderr:
+      confint: 14.0
+      units: ppm
+      n_obs:
+    Eu:
+      value: 447.0
+      stddev:
+      stderr:
+      confint: 12.0
+      units: ppm
+      n_obs:
+    F:
+      value: 304.0
+      stddev:
+      stderr:
+      confint: 0
+      units: ppm
+      n_obs:
+    Fe:
+      value: 458.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
+    Ga:
+      value: 433.0
+      stddev:
+      stderr:
+      confint: 13.0
+      units: ppm
+      n_obs:
+    Gd:
+      value: 449.0
+      stddev:
+      stderr:
+      confint: 12.0
+      units: ppm
+      n_obs:
+    Ge:
+      value: 447.0
+      stddev:
+      stderr:
+      confint: 78.0
+      units: ppm
+      n_obs:
+    Hf:
+      value: 435.0
+      stddev:
+      stderr:
+      confint: 12.0
+      units: ppm
+      n_obs:
+    Ho:
+      value: 449.0
+      stddev:
+      stderr:
+      confint: 12.0
+      units: ppm
+      n_obs:
+    In:
+      value: 434.0
+      stddev:
+      stderr:
+      confint: 19.0
+      units: ppm
+      n_obs:
+    K:
+      value: 464.0
+      stddev:
+      stderr:
+      confint: 21.0
+      units: ppm
+      n_obs:
+    La:
+      value: 440.0
+      stddev:
+      stderr:
+      confint: 10.0
+      units: ppm
+      n_obs:
+    Li:
+      value: 468.0
+      stddev:
+      stderr:
+      confint: 24.0
+      units: ppm
+      n_obs:
+    Lu:
+      value: 439.0
+      stddev:
+      stderr:
+      confint: 8.0
+      units: ppm
+      n_obs:
+    Mg:
+      value: 432.0
+      stddev:
+      stderr:
+      confint: 29.0
+      units: ppm
+      n_obs:
+    Mn:
+      value: 444.0
+      stddev:
+      stderr:
+      confint: 13.0
+      units: ppm
+      n_obs:
+    Mo:
+      value: 417.0
+      stddev:
+      stderr:
+      confint: 21.0
+      units: ppm
+      n_obs:
+    Na:
+      value: 99415,
+      stddev:
+      stderr:
+      confint: 0
+      units: ppm
+      n_obs:
+    Nb:
+      value: 465.0
+      stddev:
+      stderr:
+      confint: 34.0
+      units: ppm
+      n_obs:
+    Nd:
+      value: 430.0
+      stddev:
+      stderr:
+      confint: 8.0
+      units: ppm
+      n_obs:
+    Ni:
+      value: 458.7
+      stddev:
+      stderr:
+      confint: 4.0
+      units: ppm
+      n_obs:
+    P:
+      value: 413.0
+      stddev:
+      stderr:
+      confint: 46.0
+      units: ppm
+      n_obs:
+    Pb:
+      value: 426.0
+      stddev:
+      stderr:
+      confint: 1.0
+      units: ppm
+      n_obs:
+    Pd:
+      value: 1.21
+      stddev:
+      stderr:
+      confint: 0.44
+      units: ppm
+      n_obs:
+    Pr:
+      value: 448.0
+      stddev:
+      stderr:
+      confint: 7.0
+      units: ppm
+      n_obs:
+    Pt:
+      value: 3.12
+      stddev:
+      stderr:
+      confint: 0.08
+      units: ppm
+      n_obs:
+    Rb:
+      value: 425.7
+      stddev:
+      stderr:
+      confint: 1.0
+      units: ppm
+      n_obs:
+    Re:
+      value: 49.9
+      stddev:
+      stderr:
+      confint: 3.7
+      units: ppm
+      n_obs:
+    Rh:
+      value: 1.29
+      stddev:
+      stderr:
+      confint: 0.07
+      units: ppm
+      n_obs:
+    S:
+      value: 575.0
+      stddev:
+      stderr:
+      confint: 32.0
+      units: ppm
+      n_obs:
+    Sb:
+      value: 396.0
+      stddev:
+      stderr:
+      confint: 19.0
+      units: ppm
+      n_obs:
+    Sc:
+      value: 455.0
+      stddev:
+      stderr:
+      confint: 10.0
+      units: ppm
+      n_obs:
+    Se:
+      value: 138.0
+      stddev:
+      stderr:
+      confint: 42.0
+      units: ppm
+      n_obs:
+    Si:
+      value: 327180
+      stddev:
+      stderr:
+      confint: 0
+      units: ppm
+      n_obs:
+    Sm:
+      value: 453.0
+      stddev:
+      stderr:
+      confint: 11.0
+      units: ppm
+      n_obs:
+    Sn:
+      value: 430.0
+      stddev:
+      stderr:
+      confint: 29.0
+      units: ppm
+      n_obs:
+    Sr:
+      value: 515.5
+      stddev:
+      stderr:
+      confint: 1.0
+      units: ppm
+      n_obs:
+    Ta:
+      value: 446.0
+      stddev:
+      stderr:
+      confint: 33.0
+      units: ppm
+      n_obs:
+    Te:
+      value: 302.0
+      stddev:
+      stderr:
+      confint: 0
+      units: ppm
+      n_obs:
+    Tb:
+      value: 437.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
+    Th:
+      value: 457.2
+      stddev:
+      stderr:
+      confint: 1.0
+      units: ppm
+      n_obs:
+    Ti:
+      value: 452.0
+      stddev:
+      stderr:
+      confint: 10.0
+      units: ppm
+      n_obs:
+    Tl:
+      value: 59.6
+      stddev:
+      stderr:
+      confint: 2.8
+      units: ppm
+      n_obs:
+    Tm:
+      value: 435.0
+      stddev:
+      stderr:
+      confint: 10.0
+      units: ppm
+      n_obs:
+    U:
+      value: 461.5
+      stddev:
+      stderr:
+      confint: 1.0
+      units: ppm
+      n_obs:
+    V:
+      value: 450.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
+    W:
+      value: 444.0
+      stddev:
+      stderr:
+      confint: 29.0
+      units: ppm
+      n_obs:
+    Y:
+      value: 462.0
+      stddev:
+      stderr:
+      confint: 11.0
+      units: ppm
+      n_obs:
+    Yb:
+      value: 450.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
+    Zn:
+      value: 460.0
+      stddev:
+      stderr:
+      confint: 18.0
+      units: ppm
+      n_obs:
+    Zr:
+      value: 448.0
+      stddev:
+      stderr:
+      confint: 9.0
+      units: ppm
+      n_obs:
   isotopic_abundances:
     Pb206: 24.172847560
     Pb207: 21.987434941
@@ -100,55 +526,273 @@
     U234: 0.001817922
     U235: 0.238090910
     U238: 99.760091169
-  ratio_data:
-    B11B10: [4.409, 0, mass]
-    Nd143Nd144: [0.511927, 0, mass]
-    Nd148Nd144: [0.24146, 0, mass]
-    Nd150Nd144: [0.23596, 0, mass]
-    Pb206Pb204: [17.045, 0, atomic]
-    Pb207Pb204: [15.504, 0, atomic]
-    Pb207Pb206: [0.9096, 0, atomic]
-    Pb208Pb204: [36.964, 0, atomic]
-    Pb208Pb206: [2.168, 0, atomic]
-    Sr84Sr88: [0.5655, 0, atomic]
-    Sr87Sr86: [0.709699, 0, atomic]
-    Sr87Sr88: [0.084704, 0, atomic]
-    Rb85Sr87: [3.3683, 0, atomic]
-    Rb85Sr86: [2.391, 0, atomic]
-    K39Ca40: [0.000000703, 0, atomic]
-    K41K39: [0.072170000, 0, atomic]
-    Ca44Ca40: [0.021520000, 0, atomic]
-    Ca42Ca44: [0.310200000, 0, atomic]
-    Hf176Hf177: [0.282122, 0, mass]
-    U238U235: [418.47, 0.378, atomic]
+  isotopic_ratios:
+    B11B10:
+      isotope1: B11
+      isotope2: B10
+      value: 4.409
+      uncertainty: 0
+      ratio_type: mass
+    Nd143Nd144:
+      isotope1: Nd143
+      isotope2: Nd144
+      value: 0.511927
+      uncertainty: 0
+      ratio_type: mass
+    Nd148Nd144:
+      isotope1: Nd148
+      isotope2: Nd144
+      value: 0.24146
+      uncertainty: 0
+      ratio_type: mass
+    Nd150Nd144:
+      isotope1: Nd150
+      isotope2: Nd144
+      value: 0.23596
+      uncertainty: 0
+      ratio_type: mass
+    Pb206Pb204:
+      isotope1: Pb206
+      isotope2: Pb204
+      value: 17.045
+      uncertainty: 0
+      ratio_type: atomic
+    Pb207Pb204:
+      isotope1: Pb207
+      isotope2: Pb204
+      value: 15.504
+      uncertainty: 0
+      ratio_type: atomic
+    Pb207Pb206:
+      isotope1: Pb207
+      isotope2: Pb206
+      value: 0.9096
+      uncertainty: 0
+      ratio_type: atomic
+    Pb208Pb204:
+      isotope1: Pb208
+      isotope2: Pb204
+      value: 36.964
+      uncertainty: 0
+      ratio_type: atomic
+    Pb208Pb206:
+      isotope1: Pb208
+      isotope2: Pb206
+      value: 2.168
+      uncertainty: 0
+      ratio_type: atomic
+    Sr84Sr88:
+      isotope1: Sr84
+      isotope2: Sr88
+      value: 0.5655
+      uncertainty: 0
+      ratio_type: atomic
+    Sr87Sr86:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.709699
+      uncertainty: 0
+      ratio_type: atomic
+    Sr87Sr88:
+      isotope1: Sr87
+      isotope2: Sr88
+      value: 0.084704
+      uncertainty: 0
+      ratio_type: atomic
+    Rb85Sr87:
+      isotope1: Rb85
+      isotope2: Sr87
+      value: 3.3683
+      uncertainty: 0
+      ratio_type: atomic
+    Rb85Sr86:
+      isotope1: Rb85
+      isotope2: Sr86
+      value: 2.391
+      uncertainty: 0
+      ratio_type: atomic
+    K39Ca40:
+      isotope1: K39
+      isotope2: Ca40
+      value: 0.000000703
+      uncertainty: 0
+      ratio_type: atomic
+    K41K39:
+      isotope1: K41
+      isotope2: K39
+      value: 0.072170000
+      uncertainty: 0
+      ratio_type: atomic
+    Ca44Ca40:
+      isotope1: Ca44
+      isotope2: Ca40
+      value: 0.021520000
+      uncertainty: 0
+      ratio_type: atomic
+    Ca42Ca44:
+      isotope1: Ca42
+      isotope2: Ca44
+      value: 0.310200000
+      uncertainty: 0
+      ratio_type: atomic
+    Hf176Hf177:
+      isotope1: Hf176
+      isotope2: Hf177
+      value: 0.282122
+      uncertainty: 0
+      ratio_type: mass
+    U238U235:
+      isotope1: U238
+      isotope2: U238
+      value: 418.47
+      uncertainty: 0.378
+      ratio_type: atomic
+  age_data: [manufacture, 1970, 0, yr]
+
+- refmatID: NIST612
+  name: NIST SRM 612
+  material: glass
+  aliases: [NIST612, NIST 612]
+  references:
+    [
+      Kane1998 doi:10.1111/j.1751-908X.1998.tb00541.x,
+      JochumEtAl2011 doi:10.1111/j.1751-908X.2011.00120.x,
+    ]
+  elemental_concentrations:
+
+  isotopic_abundances:
+
+  isotopic_ratios:
   age_data: [manufacture, 1970, 0, yr]
 
 - refmatID: G17560
   name: G17560
+  description: Hyper-radiogenic mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum
   material: mica
   aliases: [G17560STD]
   references:
   elemental_concentrations:
-    Li: [21683.4, 645.35, ppm]
-    Be: [27.2, 0.515, ppm]
-    B: [126.7, 8.75, ppm]
-    Na: [2513.6, 42.445, ppm]
-    Al: [143414.0, 3509.87, ppm]
-    Si: [228274.0, 792.24, ppm]
-    P: [112.1, 5.08, ppm]
-    K: [72284.94, 778.62, ppm]
-    Ti: [45.71, 3.215, ppm]
-    Mn: [1960.8, 105.5, ppm]
-    Zn: [23.68, 1.045, ppm]
-    Rb: [14176.2, 329.21, ppm]
-    Cs: [2349.38, 100.92, ppm]
-    Ta: [129.72, 9.425, ppm]
-    W: [101.3, 7.1, ppm]
+    Li:
+      value: 21683.4
+      stddev: 645.35
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Be:
+      value: 27.2
+      stddev: 0.515
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    B:
+      value: 126.7
+      stddev: 8.75
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Na:
+      value: 2513.6
+      stddev: 42.445
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Al:
+      value: 143414.0
+      stddev: 3509.87
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Si:
+      value: 228274.0
+      stddev: 792.24
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    P:
+      value: 112.1
+      stddev: 5.08
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    K:
+      value: 72284.94
+      stddev: 778.62
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Ti:
+      value: 45.71
+      stddev: 3.215
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Mn:
+      value: 1960.8
+      stddev: 105.5
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Zn:
+      value: 23.68
+      stddev: 1.045
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Rb:
+      value: 14176.2
+      stddev: 329.21
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Cs:
+      value: 2349.38
+      stddev: 100.92
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    Ta:
+      value: 129.72
+      stddev: 9.425
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
+    W:
+      value: 101.3
+      stddev: 7.1
+      stderr:
+      confint:
+      units: ppm
+      n_obs:
   isotopic_abundances:
     Sr88: 0.009662
     Sr87: 0.989119
     Sr86: 0.001154
     Sr84: 0.000066
-  ratio_data:
-    Rb85Sr87: [144.889, 0.137, atomic]
-  age_data: [RbSr, 492.28, 0.535, Myr]
+  isotopic_ratios:
+    Rb85Sr87:
+      isotope1: Rb85
+      isotope2: Sr87
+      value: 144.889
+      uncertainty: 0.137
+      ratio_type: atomic
+  age_data:
+    RbSr:
+      value: 492.28
+      stddev: 0.535
+      stderr:
+      confint:
+      units: Myr
