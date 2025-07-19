@@ -12,24 +12,21 @@
 #   elemental_concentrations:
 #     H:
 #       value: 251.0
-#       stddev:
-#       stderr:
-#       confint: 9.0
+#       uncertainty: 9.0
 #       units: ppm
-#       n_obs:
+#
 #   isotopic_abundances:
 #     Sr88: 0.8258 (i.e. the fractional abundance)
 #   isotopic_ratios:
 #     Rb85Sr87:
 #       value:
-#       stddev:
-#       stderr:
-#       confint:
-#       type: atomic OR mass (type of ratio)
-#       n_obs:
-#   age_data: [system, value, uncert, unit] (e.g. [U238Pb206, 600, 1, Myr])
 
-# stddev = 2SD, stderr = 2SE, confint = 95%CI
+#
+#       uncertainty:
+#       type: atomic OR mass (type of ratio)
+#
+#   age_data: [system, value, uncert, unit] (e.g. [U238Pb206, 600, 1, Myr])
+# Uncertainty follows that of GUM (aka the combined standard uncertainty). Coverage factor, k, is = 2.
 
 # NIST SRM 610
 - refmatID: NIST610
@@ -45,480 +42,276 @@
   elemental_concentrations:
     Ag:
       value: 251.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
     Al:
-      value: 10797,
-      stddev:
-      stderr:
-      confint: 0
+      value: 10797
+      uncertainty: 0
       units: ppm
-      n_obs:
     As:
       value: 325.0
-      stddev:
-      stderr:
-      confint: 18.0
+      uncertainty: 18.0
       units: ppm
-      n_obs:
     Au:
       value: 23.6
-      stddev:
-      stderr:
-      confint: 1.7
+      uncertainty: 1.7
       units: ppm
-      n_obs:
     B:
       value: 350.0
-      stddev:
-      stderr:
-      confint: 56.0
+      uncertainty: 56.0
       units: ppm
-      n_obs:
     Ba:
       value: 452.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
     Be:
       value: 476.0
-      stddev:
-      stderr:
-      confint: 31.0
+      uncertainty: 31.0
       units: ppm
-      n_obs:
     Bi:
       value: 384.0
-      stddev:
-      stderr:
-      confint: 26.0
+      uncertainty: 26.0
       units: ppm
-      n_obs:
     Ca:
       value: 82144,
-      stddev:
-      stderr:
-      confint: 0
+      uncertainty: 0
       units: ppm
-      n_obs:
     Cd:
       value: 270.0
-      stddev:
-      stderr:
-      confint: 16.0
+      uncertainty: 16.0
       units: ppm
-      n_obs:
     Ce:
       value: 453.0
-      stddev:
-      stderr:
-      confint: 8.0
+      uncertainty: 8.0
       units: ppm
-      n_obs:
     Cl:
       value: 274.0
-      stddev:
-      stderr:
-      confint: 67.0
+      uncertainty: 67.0
       units: ppm
-      n_obs:
     Co:
       value: 410.0
-      stddev:
-      stderr:
-      confint: 10.0
+      uncertainty: 10.0
       units: ppm
-      n_obs:
     Cr:
       value: 408.0
-      stddev:
-      stderr:
-      confint: 10.0
+      uncertainty: 10.0
       units: ppm
-      n_obs:
     Cs:
       value: 366.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
     Cu:
       value: 441.0
-      stddev:
-      stderr:
-      confint: 15.0
+      uncertainty: 15.0
       units: ppm
-      n_obs:
     Dy:
       value: 437.0
-      stddev:
-      stderr:
-      confint: 11.0
+      uncertainty: 11.0
       units: ppm
-      n_obs:
     Er:
       value: 455.0
-      stddev:
-      stderr:
-      confint: 14.0
+      uncertainty: 14.0
       units: ppm
-      n_obs:
     Eu:
       value: 447.0
-      stddev:
-      stderr:
-      confint: 12.0
+      uncertainty: 12.0
       units: ppm
-      n_obs:
     F:
       value: 304.0
-      stddev:
-      stderr:
-      confint: 0
+      uncertainty: 0
       units: ppm
-      n_obs:
     Fe:
       value: 458.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
     Ga:
       value: 433.0
-      stddev:
-      stderr:
-      confint: 13.0
+      uncertainty: 13.0
       units: ppm
-      n_obs:
     Gd:
       value: 449.0
-      stddev:
-      stderr:
-      confint: 12.0
+      uncertainty: 12.0
       units: ppm
-      n_obs:
     Ge:
       value: 447.0
-      stddev:
-      stderr:
-      confint: 78.0
+      uncertainty: 78.0
       units: ppm
-      n_obs:
     Hf:
       value: 435.0
-      stddev:
-      stderr:
-      confint: 12.0
+      uncertainty: 12.0
       units: ppm
-      n_obs:
     Ho:
       value: 449.0
-      stddev:
-      stderr:
-      confint: 12.0
+      uncertainty: 12.0
       units: ppm
-      n_obs:
     In:
       value: 434.0
-      stddev:
-      stderr:
-      confint: 19.0
+      uncertainty: 19.0
       units: ppm
-      n_obs:
     K:
       value: 464.0
-      stddev:
-      stderr:
-      confint: 21.0
+      uncertainty: 21.0
       units: ppm
-      n_obs:
     La:
       value: 440.0
-      stddev:
-      stderr:
-      confint: 10.0
+      uncertainty: 10.0
       units: ppm
-      n_obs:
     Li:
       value: 468.0
-      stddev:
-      stderr:
-      confint: 24.0
+      uncertainty: 24.0
       units: ppm
-      n_obs:
     Lu:
       value: 439.0
-      stddev:
-      stderr:
-      confint: 8.0
+      uncertainty: 8.0
       units: ppm
-      n_obs:
     Mg:
       value: 432.0
-      stddev:
-      stderr:
-      confint: 29.0
+      uncertainty: 29.0
       units: ppm
-      n_obs:
     Mn:
       value: 444.0
-      stddev:
-      stderr:
-      confint: 13.0
+      uncertainty: 13.0
       units: ppm
-      n_obs:
     Mo:
       value: 417.0
-      stddev:
-      stderr:
-      confint: 21.0
+      uncertainty: 21.0
       units: ppm
-      n_obs:
     Na:
       value: 99415,
-      stddev:
-      stderr:
-      confint: 0
+      uncertainty: 0
       units: ppm
-      n_obs:
     Nb:
       value: 465.0
-      stddev:
-      stderr:
-      confint: 34.0
+      uncertainty: 34.0
       units: ppm
-      n_obs:
     Nd:
       value: 430.0
-      stddev:
-      stderr:
-      confint: 8.0
+      uncertainty: 8.0
       units: ppm
-      n_obs:
     Ni:
       value: 458.7
-      stddev:
-      stderr:
-      confint: 4.0
+      uncertainty: 4.0
       units: ppm
-      n_obs:
     P:
       value: 413.0
-      stddev:
-      stderr:
-      confint: 46.0
+      uncertainty: 46.0
       units: ppm
-      n_obs:
     Pb:
       value: 426.0
-      stddev:
-      stderr:
-      confint: 1.0
+      uncertainty: 1.0
       units: ppm
-      n_obs:
     Pd:
       value: 1.21
-      stddev:
-      stderr:
-      confint: 0.44
+      uncertainty: 0.44
       units: ppm
-      n_obs:
     Pr:
       value: 448.0
-      stddev:
-      stderr:
-      confint: 7.0
+      uncertainty: 7.0
       units: ppm
-      n_obs:
     Pt:
       value: 3.12
-      stddev:
-      stderr:
-      confint: 0.08
+      uncertainty: 0.08
       units: ppm
-      n_obs:
     Rb:
       value: 425.7
-      stddev:
-      stderr:
-      confint: 1.0
+      uncertainty: 1.0
       units: ppm
-      n_obs:
     Re:
       value: 49.9
-      stddev:
-      stderr:
-      confint: 3.7
+      uncertainty: 3.7
       units: ppm
-      n_obs:
     Rh:
       value: 1.29
-      stddev:
-      stderr:
-      confint: 0.07
+      uncertainty: 0.07
       units: ppm
-      n_obs:
     S:
       value: 575.0
-      stddev:
-      stderr:
-      confint: 32.0
+      uncertainty: 32.0
       units: ppm
-      n_obs:
     Sb:
       value: 396.0
-      stddev:
-      stderr:
-      confint: 19.0
+      uncertainty: 19.0
       units: ppm
-      n_obs:
     Sc:
       value: 455.0
-      stddev:
-      stderr:
-      confint: 10.0
+      uncertainty: 10.0
       units: ppm
-      n_obs:
     Se:
       value: 138.0
-      stddev:
-      stderr:
-      confint: 42.0
+      uncertainty: 42.0
       units: ppm
-      n_obs:
     Si:
       value: 327180
-      stddev:
-      stderr:
-      confint: 0
+      uncertainty: 0
       units: ppm
-      n_obs:
     Sm:
       value: 453.0
-      stddev:
-      stderr:
-      confint: 11.0
+      uncertainty: 11.0
       units: ppm
-      n_obs:
     Sn:
       value: 430.0
-      stddev:
-      stderr:
-      confint: 29.0
+      uncertainty: 29.0
       units: ppm
-      n_obs:
     Sr:
       value: 515.5
-      stddev:
-      stderr:
-      confint: 1.0
+      uncertainty: 1.0
       units: ppm
-      n_obs:
     Ta:
       value: 446.0
-      stddev:
-      stderr:
-      confint: 33.0
+      uncertainty: 33.0
       units: ppm
-      n_obs:
     Te:
       value: 302.0
-      stddev:
-      stderr:
-      confint: 0
+      uncertainty: 0
       units: ppm
-      n_obs:
     Tb:
       value: 437.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
     Th:
       value: 457.2
-      stddev:
-      stderr:
-      confint: 1.0
+      uncertainty: 1.0
       units: ppm
-      n_obs:
     Ti:
       value: 452.0
-      stddev:
-      stderr:
-      confint: 10.0
+      uncertainty: 10.0
       units: ppm
-      n_obs:
     Tl:
       value: 59.6
-      stddev:
-      stderr:
-      confint: 2.8
+      uncertainty: 2.8
       units: ppm
-      n_obs:
     Tm:
       value: 435.0
-      stddev:
-      stderr:
-      confint: 10.0
+      uncertainty: 10.0
       units: ppm
-      n_obs:
     U:
       value: 461.5
-      stddev:
-      stderr:
-      confint: 1.0
+      uncertainty: 1.0
       units: ppm
-      n_obs:
     V:
       value: 450.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
     W:
       value: 444.0
-      stddev:
-      stderr:
-      confint: 29.0
+      uncertainty: 29.0
       units: ppm
-      n_obs:
     Y:
       value: 462.0
-      stddev:
-      stderr:
-      confint: 11.0
+      uncertainty: 11.0
       units: ppm
-      n_obs:
     Yb:
       value: 450.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
     Zn:
       value: 460.0
-      stddev:
-      stderr:
-      confint: 18.0
+      uncertainty: 18.0
       units: ppm
-      n_obs:
     Zr:
       value: 448.0
-      stddev:
-      stderr:
-      confint: 9.0
+      uncertainty: 9.0
       units: ppm
-      n_obs:
   isotopic_abundances:
     Pb206: 24.172847560
     Pb207: 21.987434941
@@ -667,116 +460,71 @@
 
 - refmatID: G17560
   name: G17560
-  description: Hyper-radiogenic mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum
+  description: High rubidium mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum.
   material: mica
   aliases: [G17560STD]
   references:
   elemental_concentrations:
     Li:
       value: 21683.4
-      stddev: 645.35
-      stderr:
-      confint:
+      uncertainty: 645.35
       units: ppm
-      n_obs:
     Be:
       value: 27.2
-      stddev: 0.515
-      stderr:
-      confint:
+      uncertainty: 0.515
       units: ppm
-      n_obs:
     B:
       value: 126.7
-      stddev: 8.75
-      stderr:
-      confint:
+      uncertainty: 8.75
       units: ppm
-      n_obs:
     Na:
       value: 2513.6
-      stddev: 42.445
-      stderr:
-      confint:
+      uncertainty: 42.445
       units: ppm
-      n_obs:
     Al:
       value: 143414.0
-      stddev: 3509.87
-      stderr:
-      confint:
+      uncertainty: 3509.87
       units: ppm
-      n_obs:
     Si:
       value: 228274.0
-      stddev: 792.24
-      stderr:
-      confint:
+      uncertainty: 792.24
       units: ppm
-      n_obs:
     P:
       value: 112.1
-      stddev: 5.08
-      stderr:
-      confint:
+      uncertainty: 5.08
       units: ppm
-      n_obs:
     K:
       value: 72284.94
-      stddev: 778.62
-      stderr:
-      confint:
+      uncertainty: 778.62
       units: ppm
-      n_obs:
     Ti:
       value: 45.71
-      stddev: 3.215
-      stderr:
-      confint:
+      uncertainty: 3.215
       units: ppm
-      n_obs:
     Mn:
       value: 1960.8
-      stddev: 105.5
-      stderr:
-      confint:
+      uncertainty: 105.5
       units: ppm
-      n_obs:
     Zn:
       value: 23.68
-      stddev: 1.045
-      stderr:
-      confint:
+      uncertainty: 1.045
       units: ppm
-      n_obs:
     Rb:
       value: 14176.2
-      stddev: 329.21
-      stderr:
-      confint:
+      uncertainty: 329.21
       units: ppm
-      n_obs:
     Cs:
       value: 2349.38
-      stddev: 100.92
-      stderr:
-      confint:
+      uncertainty: 100.92
       units: ppm
-      n_obs:
     Ta:
       value: 129.72
-      stddev: 9.425
-      stderr:
-      confint:
+      uncertainty: 9.425
       units: ppm
-      n_obs:
     W:
       value: 101.3
-      stddev: 7.1
-      stderr:
-      confint:
+      uncertainty: 7.1
       units: ppm
-      n_obs:
   isotopic_abundances:
     Sr88: 0.009662
     Sr87: 0.989119
@@ -792,7 +540,5 @@
   age_data:
     RbSr:
       value: 492.28
-      stddev: 0.535
-      stderr:
-      confint:
+      uncertainty: 0.535
       units: Myr
