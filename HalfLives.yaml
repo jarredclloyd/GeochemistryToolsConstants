@@ -1,0 +1,87 @@
+# SPDX-FileCopyrightText: Copyright © 2025 Jarred C Lloyd 4o8pg2v9h@mozmail.com
+#
+# SPDX-License-Identifier: MPL-2.0
+
+# Half lives of isotopes used in geochronology.
+# Units of seconds are used to minimise rounding errors during computation.
+# Ensure units is in a string compatible with Unitful.jl (s or yr with standard SI prefixes e.g. Gyr)
+# Uncertainty follows that of GUM (aka the combined standard uncertainty). Coverage factor, k, is = 2.
+
+U238:
+  halflife: 1.4100882408e+17
+  uncertainty: 3.0295296e+14
+  units: s
+  reference: VillaEtAl2016 doi:10.1016/j.gca.2015.10.011
+  decay_mode: ɑ
+U235:
+  halflife: 2.2210554456e+16
+  uncertainty: 3.0295296e+13
+  units: s
+  reference: JaffeyEtAl1971 doi:10.1103/PhysRevC.4.1889
+  decay_mode: ɑ
+U234:
+  halflife: 7.747e+12
+  uncertainty: 1.9e+10
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: ɑ
+Pa231:
+  halflife: 1.0303e+12
+  uncertainty: 6.3e+9
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1016/j.gca.2015.05.025
+  decay_mode: ɑ
+Th232:
+  halflife: 4.418e+17
+  uncertainty: 3.2e+15
+  units: s
+  reference:  NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: ɑ
+Th230:
+  halflife: 2.3794e+12
+  uncertainty: 9.5e+9
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: ɑ
+Ra226:
+  halflife: 5.049e+10
+  uncertainty: 2.2e+8
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: ɑ
+Re187:
+  halflife: 1.31277e+18
+  uncertainty: 6.3e+14
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: β⁻
+Lu176:
+  halflife: 1.1679e+18
+  uncertainty: 5.4e+15
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: β⁻
+Sm147:
+  halflife: 3.352995e+18
+  uncertainty: 1.1991888e+16
+  units: s
+  reference: VillaEtAl2020 doi:10.1016/j.gca.2020.06.022
+  decay_mode: ɑ
+Sm146:
+  halflife: 2.15e+15
+  uncertainty: 2.2e+14
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: ɑ
+Rb87:
+  halflife: 1.565572536e+18
+  uncertainty: 5.049216e+15
+  units: s
+  reference: VillaEtAl2015 doi:10.1016/j.gca.2015.05.025
+  decay_mode: β⁻
+K40:
+  halflife: 3.9383e+16
+  uncertainty: 9.5e+13
+  units: s
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  decay_mode: β⁻ 0.8928(13), β⁺/EC 0.1072(13)
