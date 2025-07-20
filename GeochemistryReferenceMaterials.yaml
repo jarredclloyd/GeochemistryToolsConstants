@@ -440,7 +440,11 @@
       value: 418.47
       uncertainty: 0.378
       ratio_type: atomic
-  age_data: [manufacture, 1970, 0, yr]
+  age_data:
+    manufacture:
+      value: 1971
+      uncertainty: 0
+      units: yr
 
 - refmatID: NIST612
   name: NIST SRM 612
@@ -456,7 +460,11 @@
   isotopic_abundances:
 
   isotopic_ratios:
-  age_data: [manufacture, 1970, 0, yr]
+  age_data:
+    manufacture:
+      value: 1971
+      uncertainty: 0
+      units: yr
 
 - refmatID: G17560
   name: G17560
