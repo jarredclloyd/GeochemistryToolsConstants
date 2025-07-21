@@ -34,10 +34,11 @@
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
   aliases: [NIST610, NIST 610]
+  notes:
   references:
     [
-      Kane1998 doi:10.1111/j.1751-908X.1998.tb00541.x,
-      JochumEtAl2011 doi:10.1111/j.1751-908X.2011.00120.x,
+      Kane1998 doi-10.1111/j.1751-908X.1998.tb00541.x,
+      JochumEtAl2011 doi-10.1111/j.1751-908X.2011.00120.x,
     ]
   elemental_concentrations:
     Ag:
@@ -73,7 +74,7 @@
       uncertainty: 26.0
       units: ppm
     Ca:
-      value: 82144,
+      value: 82144
       uncertainty: 0
       units: ppm
     Cd:
@@ -177,7 +178,7 @@
       uncertainty: 21.0
       units: ppm
     Na:
-      value: 99415,
+      value: 99415
       uncertainty: 0
       units: ppm
     Nb:
@@ -313,12 +314,24 @@
       uncertainty: 9.0
       units: ppm
   isotopic_abundances:
-    Pb206: 24.172847560
-    Pb207: 21.987434941
-    Pb208: 52.421539291
-    U234: 0.001817922
-    U235: 0.238090910
-    U238: 99.760091169
+    Pb206:
+      value: 24.172847560
+      uncertainty: 0
+    Pb207:
+      value: 21.987434941
+      uncertainty: 0
+    Pb208:
+      value: 52.421539291
+      uncertainty: 0
+    U234:
+      value: 0.001817922
+      uncertainty: 0
+    U235:
+      value: 0.238090910
+      uncertainty: 0
+    U238:
+      value: 99.760091169
+      uncertainty: 0
   isotopic_ratios:
     B11B10:
       isotope1: B11
@@ -450,10 +463,11 @@
   name: NIST SRM 612
   material: glass
   aliases: [NIST612, NIST 612]
+  notes:
   references:
     [
-      Kane1998 doi:10.1111/j.1751-908X.1998.tb00541.x,
-      JochumEtAl2011 doi:10.1111/j.1751-908X.2011.00120.x,
+      Kane1998 doi-10.1111/j.1751-908X.1998.tb00541.x,
+      JochumEtAl2011 doi-10.1111/j.1751-908X.2011.00120.x,
     ]
   elemental_concentrations:
 
@@ -471,6 +485,7 @@
   description: High rubidium mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum.
   material: mica
   aliases: [G17560STD]
+  notes:
   references:
   elemental_concentrations:
     Li:
@@ -534,10 +549,18 @@
       uncertainty: 7.1
       units: ppm
   isotopic_abundances:
-    Sr88: 0.009662
-    Sr87: 0.989119
-    Sr86: 0.001154
-    Sr84: 0.000066
+    Sr88:
+      value: 0.009662
+      uncertainty: 0
+    Sr87:
+      value: 0.989119
+      uncertainty: 0
+    Sr86:
+      value: 0.001154
+      uncertainty: 0
+    Sr84:
+      value: 0.000066
+      uncertainty: 0
   isotopic_ratios:
     Rb85Sr87:
       isotope1: Rb85
