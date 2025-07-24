@@ -13,7 +13,7 @@
 #     H:
 #       value: 251.0
 #       uncertainty: 9.0
-#       units: ppm
+#       units: μg/g
 #
 #   isotopic_abundances:
 #     Sr88: 0.8258 (i.e. the fractional abundance)
@@ -44,275 +44,275 @@
     Ag:
       value: 251.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
     Al:
       value: 10797
       uncertainty: 0
-      units: ppm
+      units: μg/g
     As:
       value: 325.0
       uncertainty: 18.0
-      units: ppm
+      units: μg/g
     Au:
       value: 23.6
       uncertainty: 1.7
-      units: ppm
+      units: μg/g
     B:
       value: 350.0
       uncertainty: 56.0
-      units: ppm
+      units: μg/g
     Ba:
       value: 452.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
     Be:
       value: 476.0
       uncertainty: 31.0
-      units: ppm
+      units: μg/g
     Bi:
       value: 384.0
       uncertainty: 26.0
-      units: ppm
+      units: μg/g
     Ca:
       value: 82144
       uncertainty: 0
-      units: ppm
+      units: μg/g
     Cd:
       value: 270.0
       uncertainty: 16.0
-      units: ppm
+      units: μg/g
     Ce:
       value: 453.0
       uncertainty: 8.0
-      units: ppm
+      units: μg/g
     Cl:
       value: 274.0
       uncertainty: 67.0
-      units: ppm
+      units: μg/g
     Co:
       value: 410.0
       uncertainty: 10.0
-      units: ppm
+      units: μg/g
     Cr:
       value: 408.0
       uncertainty: 10.0
-      units: ppm
+      units: μg/g
     Cs:
       value: 366.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
     Cu:
       value: 441.0
       uncertainty: 15.0
-      units: ppm
+      units: μg/g
     Dy:
       value: 437.0
       uncertainty: 11.0
-      units: ppm
+      units: μg/g
     Er:
       value: 455.0
       uncertainty: 14.0
-      units: ppm
+      units: μg/g
     Eu:
       value: 447.0
       uncertainty: 12.0
-      units: ppm
+      units: μg/g
     F:
       value: 304.0
       uncertainty: 0
-      units: ppm
+      units: μg/g
     Fe:
       value: 458.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
     Ga:
       value: 433.0
       uncertainty: 13.0
-      units: ppm
+      units: μg/g
     Gd:
       value: 449.0
       uncertainty: 12.0
-      units: ppm
+      units: μg/g
     Ge:
       value: 447.0
       uncertainty: 78.0
-      units: ppm
+      units: μg/g
     Hf:
       value: 435.0
       uncertainty: 12.0
-      units: ppm
+      units: μg/g
     Ho:
       value: 449.0
       uncertainty: 12.0
-      units: ppm
+      units: μg/g
     In:
       value: 434.0
       uncertainty: 19.0
-      units: ppm
+      units: μg/g
     K:
       value: 464.0
       uncertainty: 21.0
-      units: ppm
+      units: μg/g
     La:
       value: 440.0
       uncertainty: 10.0
-      units: ppm
+      units: μg/g
     Li:
       value: 468.0
       uncertainty: 24.0
-      units: ppm
+      units: μg/g
     Lu:
       value: 439.0
       uncertainty: 8.0
-      units: ppm
+      units: μg/g
     Mg:
       value: 432.0
       uncertainty: 29.0
-      units: ppm
+      units: μg/g
     Mn:
       value: 444.0
       uncertainty: 13.0
-      units: ppm
+      units: μg/g
     Mo:
       value: 417.0
       uncertainty: 21.0
-      units: ppm
+      units: μg/g
     Na:
       value: 99415
       uncertainty: 0
-      units: ppm
+      units: μg/g
     Nb:
       value: 465.0
       uncertainty: 34.0
-      units: ppm
+      units: μg/g
     Nd:
       value: 430.0
       uncertainty: 8.0
-      units: ppm
+      units: μg/g
     Ni:
       value: 458.7
       uncertainty: 4.0
-      units: ppm
+      units: μg/g
     P:
       value: 413.0
       uncertainty: 46.0
-      units: ppm
+      units: μg/g
     Pb:
       value: 426.0
       uncertainty: 1.0
-      units: ppm
+      units: μg/g
     Pd:
       value: 1.21
       uncertainty: 0.44
-      units: ppm
+      units: μg/g
     Pr:
       value: 448.0
       uncertainty: 7.0
-      units: ppm
+      units: μg/g
     Pt:
       value: 3.12
       uncertainty: 0.08
-      units: ppm
+      units: μg/g
     Rb:
       value: 425.7
       uncertainty: 1.0
-      units: ppm
+      units: μg/g
     Re:
       value: 49.9
       uncertainty: 3.7
-      units: ppm
+      units: μg/g
     Rh:
       value: 1.29
       uncertainty: 0.07
-      units: ppm
+      units: μg/g
     S:
       value: 575.0
       uncertainty: 32.0
-      units: ppm
+      units: μg/g
     Sb:
       value: 396.0
       uncertainty: 19.0
-      units: ppm
+      units: μg/g
     Sc:
       value: 455.0
       uncertainty: 10.0
-      units: ppm
+      units: μg/g
     Se:
       value: 138.0
       uncertainty: 42.0
-      units: ppm
+      units: μg/g
     Si:
       value: 327180
       uncertainty: 0
-      units: ppm
+      units: μg/g
     Sm:
       value: 453.0
       uncertainty: 11.0
-      units: ppm
+      units: μg/g
     Sn:
       value: 430.0
       uncertainty: 29.0
-      units: ppm
+      units: μg/g
     Sr:
       value: 515.5
       uncertainty: 1.0
-      units: ppm
+      units: μg/g
     Ta:
       value: 446.0
       uncertainty: 33.0
-      units: ppm
+      units: μg/g
     Te:
       value: 302.0
       uncertainty: 0
-      units: ppm
+      units: μg/g
     Tb:
       value: 437.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
     Th:
       value: 457.2
       uncertainty: 1.0
-      units: ppm
+      units: μg/g
     Ti:
       value: 452.0
       uncertainty: 10.0
-      units: ppm
+      units: μg/g
     Tl:
       value: 59.6
       uncertainty: 2.8
-      units: ppm
+      units: μg/g
     Tm:
       value: 435.0
       uncertainty: 10.0
-      units: ppm
+      units: μg/g
     U:
       value: 461.5
       uncertainty: 1.0
-      units: ppm
+      units: μg/g
     V:
       value: 450.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
     W:
       value: 444.0
       uncertainty: 29.0
-      units: ppm
+      units: μg/g
     Y:
       value: 462.0
       uncertainty: 11.0
-      units: ppm
+      units: μg/g
     Yb:
       value: 450.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
     Zn:
       value: 460.0
       uncertainty: 18.0
-      units: ppm
+      units: μg/g
     Zr:
       value: 448.0
       uncertainty: 9.0
-      units: ppm
+      units: μg/g
   isotopic_abundances:
     Pb206:
       value: 24.172847560
@@ -461,6 +461,7 @@
 
 - refmatID: NIST612
   name: NIST SRM 612
+  description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
   aliases: [NIST612, NIST 612]
   notes:
@@ -491,63 +492,63 @@
     Li:
       value: 21683.4
       uncertainty: 645.35
-      units: ppm
+      units: μg/g
     Be:
       value: 27.2
       uncertainty: 0.515
-      units: ppm
+      units: μg/g
     B:
       value: 126.7
       uncertainty: 8.75
-      units: ppm
+      units: μg/g
     Na:
       value: 2513.6
       uncertainty: 42.445
-      units: ppm
+      units: μg/g
     Al:
       value: 143414.0
       uncertainty: 3509.87
-      units: ppm
+      units: μg/g
     Si:
       value: 228274.0
       uncertainty: 792.24
-      units: ppm
+      units: μg/g
     P:
       value: 112.1
       uncertainty: 5.08
-      units: ppm
+      units: μg/g
     K:
       value: 72284.94
       uncertainty: 778.62
-      units: ppm
+      units: μg/g
     Ti:
       value: 45.71
       uncertainty: 3.215
-      units: ppm
+      units: μg/g
     Mn:
       value: 1960.8
       uncertainty: 105.5
-      units: ppm
+      units: μg/g
     Zn:
       value: 23.68
       uncertainty: 1.045
-      units: ppm
+      units: μg/g
     Rb:
       value: 14176.2
       uncertainty: 329.21
-      units: ppm
+      units: μg/g
     Cs:
       value: 2349.38
       uncertainty: 100.92
-      units: ppm
+      units: μg/g
     Ta:
       value: 129.72
       uncertainty: 9.425
-      units: ppm
+      units: μg/g
     W:
       value: 101.3
       uncertainty: 7.1
-      units: ppm
+      units: μg/g
   isotopic_abundances:
     Sr88:
       value: 0.009662
