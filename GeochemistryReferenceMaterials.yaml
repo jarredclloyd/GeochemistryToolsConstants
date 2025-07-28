@@ -2,31 +2,50 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
-## Basic Reference Material Structure - copy this and fill out as appropriate for new RMs
-# - refmatID: RefMatID (should be a single string with no special characters or white space)
-#   name:  published name of ref mat (e.g. NIST SRM 610)
-#   description: string based description of material
-#   material: class of material (e.g. glass)
-#   aliases: [alias 1, alias 2]
-#   references: [ref 1, ref 2]
-#   elemental_concentrations:
-#     H:
-#       value: 251.0
-#       uncertainty: 9.0
-#       units: μg/g
+#------------------------------------------------------------------------------------------#
+#                           Basic Reference Material Structure
+#        Copy this and fill out as appropriate for new RMs - see below for examples
 #
-#   isotopic_abundances:
-#     Sr88: 0.8258 (i.e. the fractional abundance)
-#   isotopic_ratios:
-#     Rb85Sr87:
-#       value:
+#                 Uncertainty is the absolute value and follows that of GUM (aka the combined standard uncertainty).
+#                               Coverage factor, k, is = 2.
+#------------------------------------------------------------------------------------------#
 
-#
-#       uncertainty:
-#       type: atomic OR mass (type of ratio)
-#
-#   age_data: [system, value, uncert, unit] (e.g. [U238Pb206, 600, 1, Myr])
-# Uncertainty follows that of GUM (aka the combined standard uncertainty). Coverage factor, k, is = 2.
+# - refmatID: id for use as symbol (no spaces, use only standard alphanumeric characters and underscores, must start with either a letter or underscore)
+#   name: name
+#   description: description
+#   material: material type (e.g. glass, zircon, mica)
+#   aliases: [alias1, alias2]
+#   notes: any notes here
+#   references:
+#     [
+#     ref1,
+#     ref2
+#     ]
+#   elemental_concentrations:
+#     Rb: (the element key)
+#       value: x.xx
+#       uncertainty: x.xx
+#       units: μg/g
+#   isotopic_abundances:
+#     Pb206: (the isotope)
+#       value: 0.24172847560 (abundance as fraction)
+#       uncertainty: 0 (uncertainty)
+#   isotopic_ratios:
+#     Rb87Sr87: (the ratio key)
+#       isotope1: Rb87 (isotope numerator, element symbol first)
+#       isotope2: Sr87 (isotope denominator, element symbol first)
+#       value: x.xx
+#       uncertainty: x.x
+#       ratio_type: atomic OR mass
+#   age_data:
+#     RbSr: (the key for the age, either "manufacture" or the system - e.g. RbSr, U238Pb206)
+#       value: 492
+#       uncertainty: 0.5
+#       units: Myr (a string of a time unit within unitful, will add an "annum" unit at some point to represent the IUGs/IUPAC recommended definition of a year)
+
+#------------------------------------------------------------------------------------------#
+#                                   Data from here on                                      #
+#------------------------------------------------------------------------------------------#
 
 # NIST SRM 610
 - refmatID: NIST610
@@ -315,22 +334,22 @@
       units: μg/g
   isotopic_abundances:
     Pb206:
-      value: 24.172847560
+      value: 0.24172847560
       uncertainty: 0
     Pb207:
-      value: 21.987434941
+      value: 0.21987434941
       uncertainty: 0
     Pb208:
-      value: 52.421539291
+      value: 0.52421539291
       uncertainty: 0
     U234:
-      value: 0.001817922
+      value: 0.00001817922
       uncertainty: 0
     U235:
-      value: 0.238090910
+      value: 0.00238090910
       uncertainty: 0
     U238:
-      value: 99.760091169
+      value: 0.99760091169
       uncertainty: 0
   isotopic_ratios:
     B11B10:
@@ -459,6 +478,7 @@
       uncertainty: 0
       units: yr
 
+# NIST SRM 612
 - refmatID: NIST612
   name: NIST SRM 612
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
@@ -481,6 +501,7 @@
       uncertainty: 0
       units: yr
 
+# G17560 Li-Rb Mica, Brazil
 - refmatID: G17560
   name: G17560
   description: High rubidium mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum.
