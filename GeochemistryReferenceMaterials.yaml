@@ -427,45 +427,45 @@
     Rb87Sr87:
       isotope1: Rb87
       isotope2: Sr87
-      value: 3.3683
-      uncertainty: 0
+      value: 3.3658198755371203 # not rounded ~3.66
+      uncertainty: 0.09674242506388638 # not rounded ~0.97
       ratio_type: atomic
     Rb87Sr86:
       isotope1: Rb87
       isotope2: Sr86
-      value: 2.391
-      uncertainty: 0
+      value: 2.389527295006069 # not rounded ~2.39
+      uncertainty: 0.04904357793603606 # not rounded ~ 0.049
       ratio_type: atomic
-    K39Ca40:
-      isotope1: K39
+    K40Ca40:
+      isotope1: K40
       isotope2: Ca40
-      value: 0.000000703
-      uncertainty: 0
+      value: 6.97e-7
+      uncertainty: 3.2e-8
       ratio_type: atomic
     K41K39:
       isotope1: K41
       isotope2: K39
-      value: 0.072170000
-      uncertainty: 0
+      value: 0.072167
+      uncertainty: 4.7e-5
       ratio_type: atomic
     Ca44Ca40:
       isotope1: Ca44
       isotope2: Ca40
-      value: 0.021520000
-      uncertainty: 0
+      value: 0.021518243055054103 # not rounded ~ 0.0215
+      uncertainty: 0.0011352431066901068 # not rounded ~ 0.0011
       ratio_type: atomic
     Ca42Ca44:
       isotope1: Ca42
       isotope2: Ca44
-      value: 0.310200000
-      uncertainty: 0
+      value: 0.310162991371045 # not rounded ~ 0.31
+      uncertainty: 0.019725112452950142 # not rounded ~ 0.02
       ratio_type: atomic
     Hf176Hf177:
       isotope1: Hf176
       isotope2: Hf177
       value: 0.282122
-      uncertainty: 0
-      ratio_type: mass
+      uncertainty: 0.000009
+      ratio_type: atomic
     U238U235:
       isotope1: U238
       isotope2: U238
@@ -495,6 +495,12 @@
   isotopic_abundances:
 
   isotopic_ratios:
+    Hf176Hf177:
+      isotope1: Hf176
+      isotope2: Hf177
+      value: 0.282100
+      uncertainty: 0.000015
+      ratio_type: atomic
   age_data:
     manufacture:
       value: 1971
