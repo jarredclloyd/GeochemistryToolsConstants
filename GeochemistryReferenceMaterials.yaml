@@ -10,7 +10,7 @@
 #                               Coverage factor, k, is = 2.
 #------------------------------------------------------------------------------------------#
 
-# - refmatID: id for use as symbol (no spaces, use only standard alphanumeric characters and underscores, must start with either a letter or underscore)
+# - refmatID: id for use as symbol (no spaces, use only standard alphanumeric characters and underscores, must start with either a letter or underscore, preface with lowercase mineral abbreviation)
 #   name: name
 #   description: description
 #   material: material type (e.g. glass, zircon, mica)
@@ -48,11 +48,11 @@
 #------------------------------------------------------------------------------------------#
 
 # NIST SRM 610
-- refmatID: NIST610
+- refmatID: gNIST610
   name: NIST SRM 610
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
-  aliases: [NIST610, NIST 610]
+  aliases: [NIST610, NIST 610, NIST SRM 610]
   notes:
   references:
     [
@@ -479,11 +479,11 @@
       units: yr
 
 # NIST SRM 612
-- refmatID: NIST612
+- refmatID: gNIST612
   name: NIST SRM 612
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
-  aliases: [NIST612, NIST 612]
+  aliases: [NIST612, NIST 612, NIST SRM 612]
   notes:
   references:
     [
@@ -502,11 +502,11 @@
       units: yr
 
 # G17560 Li-Rb Mica, Brazil
-- refmatID: G17560
+- refmatID: lepG17560
   name: G17560
   description: High rubidium mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum.
   material: mica
-  aliases: [G17560STD]
+  aliases: [G17560STD, G17560, STDG17560, G17560lep]
   notes:
   references:
   elemental_concentrations:
@@ -584,8 +584,8 @@
       value: 0.000066
       uncertainty: 0
   isotopic_ratios:
-    Rb85Sr87:
-      isotope1: Rb85
+    Rb87Sr87:
+      isotope1: Rb87
       isotope2: Sr87
       value: 144.889
       uncertainty: 0.137
@@ -594,4 +594,127 @@
     RbSr:
       value: 492.28
       uncertainty: 0.535
-      units: Myr
+      units: Maʸʳ
+
+# MDC phlogopite, Madagascar
+- refmatID: phlMDC
+  name: MDC phlogopite
+  description: Biotite (phlogopite) mica from Bekily Madagascar
+  material: mica
+  aliases: [MDC, MDCphl, MDCmica]
+  notes: Used as a reference material for Rb-Sr geochronology; is isochronous
+  references:
+    [
+      HogmalmEtAl2017 doi.org/10.1039/c6ja00362a,
+      RedaaEtAl2021 doi.org/10.1039/d0ja00299b,
+      RedaaEtAl2022 doi.org/10.1111/ggr.12467
+    ]
+  elemental_concentrations:
+  isotopic_abundances:
+  isotopic_ratios:
+    Sr87Sr86i:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.72607
+      uncertainty: 0.00035
+      ratio_type: atomic
+    Sr86Sr87i:
+      isotope1: Sr86
+      isotope2: Sr87
+      value: 1.37728
+      uncertainty: 0.00066
+  age_data:
+    RbSr:
+      value: 519.4
+      uncertainty: 6.5
+      units: Maʸʳ
+
+# Högsbo muscovite, Gothenburg, Sweden
+- refmatID: mscHogsbo
+  name: Högsbo muscovite
+  description: Muscovite from the Högsbo pegmatite quarry, Gothenburg, Sweden
+  material: mica
+  aliases: [Högsbo-Ms, Högsbo, Hogbso]
+  notes: Used as a reference material for Rb-Sr geochronology; is isochronous
+  references:
+    [
+      HogmalmEtAl2017 doi.org/10.1039/c6ja00362a
+    ]
+  elemental_concentrations:
+  isotopic_abundances:
+  isotopic_ratios:
+    Sr87Sr86i:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.72000
+      uncertainty: 0.00010
+      ratio_type: atomic
+    Sr86Sr87i:
+      isotope1: Sr86
+      isotope2: Sr87
+      value: 1.38889
+      uncertainty: 0.00019
+  age_data:
+    RbSr:
+      value: 1029
+      uncertainty: 1.7
+      units: Maʸʳ
+
+# Mica-Mg pressed nanopowder pellet
+- refmatID: npMicaMg
+  name: Mica-Mg
+  description: Nano-particulate pressed powder pellet of CRPG Mica-Mg
+  material: Nano-particulate pressed powder pellet
+  aliases: [MicaMg, MicaMg-NP, Mica-Mg, Mica-Mg-NP]
+  notes: Used as a reference material for Rb-Sr geochronology; is homogenous at nanogram scale
+  references:
+    [
+      Govindaraju1995 doi.org/10.1111/j.1751-908X.1995.tb00164.x,
+      HogmalmEtAl2017 doi.org/10.1039/c6ja00362a,
+      RedaaEtAl2021 doi.org/10.1039/d0ja00299b
+    ]
+  elemental_concentrations:
+  isotopic_abundances:
+  isotopic_ratios:
+    Sr87Sr86:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 1.8525
+      uncertainty: 0.0024
+      ratio_type: atomic
+    Sr86Sr87:
+      isotope1: Sr86
+      isotope2: Sr87
+      value: 0.53981
+      uncertainty: 0.0007
+      ratio_type: atomic
+    Rb87Sr86:
+      isotope1: Rb87
+      isotope2: Sr86
+      value: 154.6
+      uncertainty: 1.93
+      ratio_type: atomic
+  age_data:
+    RbSr:
+      value: 519.4
+      uncertainty: 6.5
+      units: Maʸʳ
+
+
+#     :SolarSystem => (0.69899, 0.00005),
+#     :SolarSystemInv => (1.43063563141103, 0.00010233591549314200),
+#     :GLO => (0.707358, 0.00005),
+#     :GLOInv => (1.41371130318735, 0.00009992898243798420),
+#     :LaPosta => (0.70483, 0.00005),
+#     :LaPostaInv => (1.41878183391739, 0.00010064709461270000),
+#     :MtDromedary => (0.7049, 0.00005),
+#     :MtDromedaryInv => (1.41864094197758, 0.00010062710611275200),
+#     :WilsonsProm => (0.71, 0.00005),
+#     :WilsonsPromInv => (1.40845070422535, 0.00009918666931164450),
+#     :NIST610 => (0.709699, 0.000009),
+#     :NIST610Inv => (1.40904806122032, 0.00001786874794945860),
+#     :BCR2G => (0.705003, 0.000004),
+#     :BCR2GInv => (1.41843368042405, 0.00000804781642304532),
+#     :NIST612 => (0.7090630, 0.00001),
+#     :NIST612Inv => (1.41031191868705, 0.00001988979707990760),
+# )
