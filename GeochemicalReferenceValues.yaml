@@ -6,7 +6,7 @@ PAAS_PEA2012:
   Name: Post Archean Australian Shale
   Key: PAAS_PEA2012
   Class: Shale
-  Reference:
+  Reference: Pourmand, A, Dauphas, N, & Ireland, TJ (2012) 'A novel extraction chromatography and MC-ICP-MS technique for rapid analysis of REE, Sc and Y":" Revising CI-chondrite and Post-Archean Australian Shale (PAAS) abundances', *Chemical Geology*, 291, pp":"38–54, https://doi.org/10.1016/j.chemgeo.2011.08.011
   Data:
     Lu:
       value: 0.4386
@@ -76,7 +76,7 @@ PM_PO2014:
   Name: Primitive Mantle, Palme & O'Neill 2014
   Key: PM_PO2014
   Class: Primitive Mantle
-  Reference: Palme & O'Neill 2014, doi
+  Reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
   Data:
     U:
       value: 0.0229
@@ -394,7 +394,7 @@ CI_CHONDRITE_PO2014:
   Name: CI-chondrite, Palme & O'Neill 2014
   Key:  CI_CHONDRITE_PO2014
   Class: chondrite
-  Reference: Palme & O'Neill 2014
+  Reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
   Data:
     U:
       value: 0.0081
