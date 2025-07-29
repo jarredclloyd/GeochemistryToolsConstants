@@ -2,12 +2,11 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
-PAAS_PEA2012:
+- refvalID: PAAS_PEA2012
   name: Post Archean Australian Shale
-  key: PAAS_PEA2012
   class: Shale
   reference: Pourmand, A, Dauphas, N, & Ireland, TJ (2012) 'A novel extraction chromatography and MC-ICP-MS technique for rapid analysis of REE, Sc and Y":" Revising CI-chondrite and Post-Archean Australian Shale (PAAS) abundances', *Chemical Geology*, 291, pp":"38–54, https://doi.org/10.1016/j.chemgeo.2011.08.011
-  data:
+  elemental_concentrations:
     Lu:
       value: 0.4386
       uncertainty: 0.082
@@ -72,12 +71,11 @@ PAAS_PEA2012:
       value: 15.89
       uncertainty: 2.2587
       units: μg/g
-PM_PO2014:
+- refvalID: PM_PO2014
   name: Primitive Mantle, Palme & O'Neill 2014
-  key: PM_PO2014
   class: Primitive Mantle
   reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
-  data:
+  elemental_concentrations:
     U:
       value: 0.0229
       uncertainty: 0.003435
@@ -390,12 +388,11 @@ PM_PO2014:
       value: 120.0
       uncertainty: 24.0
       units: μg/g
-CI_CHONDRITE_PO2014:
+- refvalID: CI_CHONDRITE_PO2014
   name: CI-chondrite, Palme & O'Neill 2014
-  key:  CI_CHONDRITE_PO2014
   class: chondrite
   reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
-  data:
+  elemental_concentrations:
     U:
       value: 0.0081
       uncertainty: 0.000567
