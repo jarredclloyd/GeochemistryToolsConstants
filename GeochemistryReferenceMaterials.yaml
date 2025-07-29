@@ -623,6 +623,7 @@
       isotope2: Sr87
       value: 1.37728
       uncertainty: 0.00066
+      ratio_type: atomic
   age_data:
     RbSr:
       value: 519.4
@@ -654,6 +655,7 @@
       isotope2: Sr87
       value: 1.38889
       uncertainty: 0.00019
+      ratio_type: atomic
   age_data:
     RbSr:
       value: 1029
