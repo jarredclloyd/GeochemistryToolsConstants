@@ -424,14 +424,14 @@
       value: 0.084704
       uncertainty: 0
       ratio_type: atomic
-    Rb85Sr87:
-      isotope1: Rb85
+    Rb87Sr87:
+      isotope1: Rb87
       isotope2: Sr87
       value: 3.3683
       uncertainty: 0
       ratio_type: atomic
-    Rb85Sr86:
-      isotope1: Rb85
+    Rb87Sr86:
+      isotope1: Rb87
       isotope2: Sr86
       value: 2.391
       uncertainty: 0
