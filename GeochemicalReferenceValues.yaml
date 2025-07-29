@@ -3,11 +3,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 PAAS_PEA2012:
-  Name: Post Archean Australian Shale
-  Key: PAAS_PEA2012
-  Class: Shale
-  Reference: Pourmand, A, Dauphas, N, & Ireland, TJ (2012) 'A novel extraction chromatography and MC-ICP-MS technique for rapid analysis of REE, Sc and Y":" Revising CI-chondrite and Post-Archean Australian Shale (PAAS) abundances', *Chemical Geology*, 291, pp":"38–54, https://doi.org/10.1016/j.chemgeo.2011.08.011
-  Data:
+  name: Post Archean Australian Shale
+  key: PAAS_PEA2012
+  class: Shale
+  reference: Pourmand, A, Dauphas, N, & Ireland, TJ (2012) 'A novel extraction chromatography and MC-ICP-MS technique for rapid analysis of REE, Sc and Y":" Revising CI-chondrite and Post-Archean Australian Shale (PAAS) abundances', *Chemical Geology*, 291, pp":"38–54, https://doi.org/10.1016/j.chemgeo.2011.08.011
+  data:
     Lu:
       value: 0.4386
       uncertainty: 0.082
@@ -73,11 +73,11 @@ PAAS_PEA2012:
       uncertainty: 2.2587
       units: μg/g
 PM_PO2014:
-  Name: Primitive Mantle, Palme & O'Neill 2014
-  Key: PM_PO2014
-  Class: Primitive Mantle
-  Reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
-  Data:
+  name: Primitive Mantle, Palme & O'Neill 2014
+  key: PM_PO2014
+  class: Primitive Mantle
+  reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
+  data:
     U:
       value: 0.0229
       uncertainty: 0.003435
@@ -391,11 +391,11 @@ PM_PO2014:
       uncertainty: 24.0
       units: μg/g
 CI_CHONDRITE_PO2014:
-  Name: CI-chondrite, Palme & O'Neill 2014
-  Key:  CI_CHONDRITE_PO2014
-  Class: chondrite
-  Reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
-  Data:
+  name: CI-chondrite, Palme & O'Neill 2014
+  key:  CI_CHONDRITE_PO2014
+  class: chondrite
+  reference: Palme, H, & O’Neill, HSC (2014) 'Cosmochemical Estimates of Mantle Composition', In HD Holland & KK Turekian (Eds.), *Treatise on Geochemistry* (2nd ed., pp. 1–39), Elsevier, https://doi.org/10.1016/B978-0-08-095975-7.00201-1
+  data:
     U:
       value: 0.0081
       uncertainty: 0.000567
