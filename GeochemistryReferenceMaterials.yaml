@@ -41,14 +41,14 @@
 #     RbSr: (the key for the age, either "manufacture" or the system - e.g. RbSr, U238Pb206)
 #       value: 492
 #       uncertainty: 0.5
-#       units: Myr (a string of a time unit within unitful, will add an "annum" unit at some point to represent the IUGs/IUPAC recommended definition of a year)
+#       units: Maʸʳ (any valid string of a time unit within unitful, or Maʸʳ as defined within the GeochemistryToolsCore.jl package.)
 
 #------------------------------------------------------------------------------------------#
 #                                   Data from here on                                      #
 #------------------------------------------------------------------------------------------#
 
 # NIST SRM 610
-- refmatID: gNIST610
+- refmatID: gNISTSRM610
   name: NIST SRM 610
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
@@ -336,21 +336,27 @@
     Pb206:
       value: 0.24172847560
       uncertainty: 0
+      abundance_type: atomic
     Pb207:
       value: 0.21987434941
       uncertainty: 0
+      abundance_type: atomic
     Pb208:
       value: 0.52421539291
       uncertainty: 0
+      abundance_type: atomic
     U234:
       value: 0.00001817922
       uncertainty: 0
+      abundance_type: atomic
     U235:
       value: 0.00238090910
       uncertainty: 0
+      abundance_type: atomic
     U238:
       value: 0.99760091169
       uncertainty: 0
+      abundance_type: atomic
   isotopic_ratios:
     B11B10:
       isotope1: B11
@@ -427,14 +433,14 @@
     Rb87Sr87:
       isotope1: Rb87
       isotope2: Sr87
-      value: 3.3658198755371203 # not rounded ~3.66
-      uncertainty: 0.09674242506388638 # not rounded ~0.97
+      value: 3.368
+      uncertainty: 0.097
       ratio_type: atomic
     Rb87Sr86:
       isotope1: Rb87
       isotope2: Sr86
-      value: 2.389527295006069 # not rounded ~2.39
-      uncertainty: 0.04904357793603606 # not rounded ~ 0.049
+      value: 2.391
+      uncertainty: 0.049
       ratio_type: atomic
     K40Ca40:
       isotope1: K40
@@ -451,14 +457,14 @@
     Ca44Ca40:
       isotope1: Ca44
       isotope2: Ca40
-      value: 0.021518243055054103 # not rounded ~ 0.0215
-      uncertainty: 0.0011352431066901068 # not rounded ~ 0.0011
+      value: 0.0215
+      uncertainty: 0.0011
       ratio_type: atomic
     Ca42Ca44:
       isotope1: Ca42
       isotope2: Ca44
-      value: 0.310162991371045 # not rounded ~ 0.31
-      uncertainty: 0.019725112452950142 # not rounded ~ 0.02
+      value: 0.3102
+      uncertainty: 0.0197
       ratio_type: atomic
     Hf176Hf177:
       isotope1: Hf176
@@ -479,7 +485,7 @@
       units: yr
 
 # NIST SRM 612
-- refmatID: gNIST612
+- refmatID: gNISTSRM612
   name: NIST SRM 612
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
@@ -491,15 +497,377 @@
       JochumEtAl2011 doi-10.1111/j.1751-908X.2011.00120.x,
     ]
   elemental_concentrations:
-
+    Ag:
+      value: 22.0
+      uncertainty: 0.3
+      units: μg/g
+    Al:
+      value: 11167
+      uncertainty: 0
+      units: μg/g
+    As:
+      value: 35.7
+      uncertainty: 5.5
+      units: μg/g
+    Au:
+      value: 4.77
+      uncertainty: 0.31
+      units: μg/g
+    B:
+      value: 34.3
+      uncertainty: 1.7
+      units: μg/g
+    Ba:
+      value: 39.3
+      uncertainty: 0.9
+      units: μg/g
+    Be:
+      value: 37.5
+      uncertainty: 1.5
+      units: μg/g
+    Bi:
+      value: 30.2
+      uncertainty: 2.3
+      units: μg/g
+    Ca:
+      value: 85002
+      uncertainty: 0
+      units: μg/g
+    Cd:
+      value: 28.1
+      uncertainty: 1.1
+      units: μg/g
+    Ce:
+      value: 38.4
+      uncertainty: 0.7
+      units: μg/g
+    Cl:
+      value: 142.0
+      uncertainty: 58.0
+      units: μg/g
+    Co:
+      value: 35.5
+      uncertainty: 1.0
+      units: μg/g
+    Cr:
+      value: 36.4
+      uncertainty: 1.5
+      units: μg/g
+    Cs:
+      value: 42.7
+      uncertainty: 1.8
+      units: μg/g
+    Cu:
+      value: 37.8
+      uncertainty: 1.5
+      units: μg/g
+    Dy:
+      value: 35.5
+      uncertainty: 0.7
+      units: μg/g
+    Er:
+      value: 38.0
+      uncertainty: 0.9
+      units: μg/g
+    Eu:
+      value: 35.6
+      uncertainty: 0.8
+      units: μg/g
+    F:
+      value: 80.0
+      uncertainty: 89.0
+      units: μg/g
+    Fe:
+      value: 51.0
+      uncertainty: 2.0
+      units: μg/g
+    Ga:
+      value: 36.9
+      uncertainty: 1.5
+      units: μg/g
+    Gd:
+      value: 37.3
+      uncertainty: 0.9
+      units: μg/g
+    Ge:
+      value: 36.1
+      uncertainty: 3.8
+      units: μg/g
+    Hf:
+      value: 36.7
+      uncertainty: 1.2
+      units: μg/g
+    Ho:
+      value: 38.3
+      uncertainty: 0.8
+      units: μg/g
+    In:
+      value: 38.9
+      uncertainty: 2.1
+      units: μg/g
+    K:
+      value: 62.3
+      uncertainty: 2.4
+      units: μg/g
+    La:
+      value: 36.0
+      uncertainty: 0.7
+      units: μg/g
+    Li:
+      value: 40.2
+      uncertainty: 1.3
+      units: μg/g
+    Lu:
+      value: 37.0
+      uncertainty: 0.9
+      units: μg/g
+    Mg:
+      value: 68.0
+      uncertainty: 5.1
+      units: μg/g
+    Mn:
+      value: 38.7
+      uncertainty: 0.9
+      units: μg/g
+    Mo:
+      value: 37.4
+      uncertainty: 1.5
+      units: μg/g
+    Na:
+      value: 103858
+      uncertainty: 0
+      units: μg/g
+    Nb:
+      value: 38.9
+      uncertainty: 2.1
+      units: μg/g
+    Nd:
+      value: 35.5
+      uncertainty: 0.7
+      units: μg/g
+    Ni:
+      value: 38.8
+      uncertainty: 0.2
+      units: μg/g
+    P:
+      value: 46.6
+      uncertainty: 6.9
+      units: μg/g
+    Pb:
+      value: 38.57
+      uncertainty: 0.2
+      units: μg/g
+    Pd:
+      value: 1.05
+      uncertainty: 0.1
+      units: μg/g
+    Pr:
+      value: 37.9
+      uncertainty: 1.0
+      units: μg/g
+    Pt:
+      value: 2.51
+      uncertainty: 0.1
+      units: μg/g
+    Rb:
+      value: 31.4
+      uncertainty: 0.4
+      units: μg/g
+    Re:
+      value: 6.63
+      uncertainty: 0.61
+      units: μg/g
+    Rh:
+      value: 0.91
+      uncertainty: 0.02
+      units: μg/g
+    S:
+      value: 377.0
+      uncertainty: 70.0
+      units: μg/g
+    Sb:
+      value: 34.7
+      uncertainty: 1.8
+      units: μg/g
+    Sc:
+      value: 39.9
+      uncertainty: 2.5
+      units: μg/g
+    Si:
+      value: 336061
+      uncertainty: 0
+      units: μg/g
+    Sm:
+      value: 37.7
+      uncertainty: 0.8
+      units: μg/g
+    Sn:
+      value: 38.6
+      uncertainty: 1.3
+      units: μg/g
+    Sr:
+      value: 78.4
+      uncertainty: 0.2
+      units: μg/g
+    Ta:
+      value: 37.6
+      uncertainty: 1.9
+      units: μg/g
+    Tb:
+      value: 37.6
+      uncertainty: 1.1
+      units: μg/g
+    Th:
+      value: 37.79
+      uncertainty: 0.08
+      units: μg/g
+    Ti:
+      value: 44.0
+      uncertainty: 2.3
+      units: μg/g
+    Tl:
+      value: 14.9
+      uncertainty: 0.5
+      units: μg/g
+    Tm:
+      value: 36.8
+      uncertainty: 0.6
+      units: μg/g
+    U:
+      value: 37.38
+      uncertainty: 0.08
+      units: μg/g
+    V:
+      value: 38.8
+      uncertainty: 1.2
+      units: μg/g
+    W:
+      value: 38.0
+      uncertainty: 1.1
+      units: μg/g
+    Y:
+      value: 38.3
+      uncertainty: 1.4
+      units: μg/g
+    Yb:
+      value: 39.2
+      uncertainty: 0.9
+      units: μg/g
+    Zn:
+      value: 39.1
+      uncertainty: 1.7
+      units: μg/g
+    Zr:
+      value: 37.9
+      uncertainty: 1.2
+      units: μg/g
   isotopic_abundances:
-
+    Pb204:
+      value: 0.014162
+      uncertainty: 0
+      abundance_type: atomic
+    Pb206:
+      value: 0.242101
+      uncertainty: 0.000056
+      abundance_type: atomic
+    Pb207:
+      value: 0.21967
+      uncertainty: 0.000085
+      abundance_type: atomic
+    Pb208:
+      value: 0.524068
+      uncertainty: 0.0002832
+      abundance_type: atomic
+    U234:
+      value: 0.000055
+      uncertainty: 0
+      abundance_type: atomic
+    U235:
+      value: 0.007203
+      uncertainty: 0
+      abundance_type: atomic
+    U238:
+      value: 0.99274
+      uncertainty: 0.000016
+      abundance_type: atomic
   isotopic_ratios:
+    11B10B:
+      isotope1: B11
+      isotope2: B10
+      value: 4.048
+      uncertainty: 0
+      ratio_type: atomic
+    143Nd144Nd:
+      isotope1: Nd143
+      isotope2: Nd144
+      value: 0.51193
+      uncertainty: 0
+      ratio_type: atomic
+    206Pb204Pb:
+      isotope1: Pb206
+      isotope2: Pb204
+      value: 17.095
+      uncertainty: 0
+      ratio_type: atomic
+    207Pb204Pb:
+      isotope1: Pb207
+      isotope2: Pb204
+      value: 15.511
+      uncertainty: 0
+      ratio_type: atomic
+    207Pb206Pb:
+      isotope1: Pb207
+      isotope2: Pb206
+      value: 0.9073
+      uncertainty: 0
+      ratio_type: atomic
+    208Pb204Pb:
+      isotope1: Pb208
+      isotope2: Pb204
+      value: 37.005
+      uncertainty: 0
+      ratio_type: atomic
+    208Pb206Pb:
+      isotope1: Pb208
+      isotope2: Pb206
+      value: 2.1647
+      uncertainty: 0
+      ratio_type: atomic
     Hf176Hf177:
       isotope1: Hf176
       isotope2: Hf177
       value: 0.282100
       uncertainty: 0.000015
+      ratio_type: atomic
+    Sr84Sr88:
+      isotope1: Sr84
+      isotope2: Sr88
+      value: 0.6749
+      uncertainty: 0
+      ratio_type: atomic
+    Sr87Sr86:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.709063
+      uncertainty: 0
+      ratio_type: atomic
+    Sr87Sr88:
+      isotope1: Sr87
+      isotope2: Sr88
+      value: 0.084628
+      uncertainty: 0
+      ratio_type: atomic
+    Rb87Sr87:
+      isotope1: Rb87
+      isotope2: Sr87
+      value: 1.635
+      uncertainty: 0
+      ratio_type: atomic
+    Rb87Sr86:
+      isotope1: Rb87
+      isotope2: Sr86
+      value: 1.159
+      uncertainty: 0
       ratio_type: atomic
   age_data:
     manufacture:
@@ -507,8 +875,8 @@
       uncertainty: 0
       units: yr
 
-# G17560 Li-Rb Mica, Brazil
-- refmatID: lepG17560
+# G17560 Li-Rb mica (lepidolite), Brazil
+- refmatID: LpdG17560
   name: G17560
   description: High rubidium mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum.
   material: mica
@@ -603,17 +971,17 @@
       units: Maʸʳ
 
 # MDC phlogopite, Madagascar
-- refmatID: phlMDC
+- refmatID: PhlMDC
   name: MDC phlogopite
   description: Biotite (phlogopite) mica from Bekily Madagascar
   material: mica
   aliases: [MDC, MDCphl, MDCmica]
-  notes: Used as a reference material for Rb-Sr geochronology; is isochronous
+  notes: Used as a reference material for Rb-Sr geochronology; isochronous
   references:
     [
       HogmalmEtAl2017 doi.org/10.1039/c6ja00362a,
       RedaaEtAl2021 doi.org/10.1039/d0ja00299b,
-      RedaaEtAl2022 doi.org/10.1111/ggr.12467
+      RedaaEtAl2022 doi.org/10.1111/ggr.12467,
     ]
   elemental_concentrations:
   isotopic_abundances:
@@ -637,16 +1005,13 @@
       units: Maʸʳ
 
 # Högsbo muscovite, Gothenburg, Sweden
-- refmatID: mscHogsbo
+- refmatID: MsHogsbo
   name: Högsbo muscovite
   description: Muscovite from the Högsbo pegmatite quarry, Gothenburg, Sweden
   material: mica
-  aliases: [Högsbo-Ms, Högsbo, Hogbso]
-  notes: Used as a reference material for Rb-Sr geochronology; is isochronous
-  references:
-    [
-      HogmalmEtAl2017 doi.org/10.1039/c6ja00362a
-    ]
+  aliases: [Högsbo-Ms, Högsbo, Hogbso, HogsboMs]
+  notes: Used as a reference material for Rb-Sr geochronology; isochronous
+  references: [HogmalmEtAl2017 doi.org/10.1039/c6ja00362a]
   elemental_concentrations:
   isotopic_abundances:
   isotopic_ratios:
@@ -669,7 +1034,7 @@
       units: Maʸʳ
 
 # Mica-Mg pressed nanopowder pellet
-- refmatID: npMicaMg
+- refmatID: pnpMicaMg
   name: Mica-Mg
   description: Nano-particulate pressed powder pellet of CRPG Mica-Mg
   material: Nano-particulate pressed powder pellet
@@ -679,7 +1044,7 @@
     [
       Govindaraju1995 doi.org/10.1111/j.1751-908X.1995.tb00164.x,
       HogmalmEtAl2017 doi.org/10.1039/c6ja00362a,
-      RedaaEtAl2021 doi.org/10.1039/d0ja00299b
+      RedaaEtAl2021 doi.org/10.1039/d0ja00299b,
     ]
   elemental_concentrations:
   isotopic_abundances:
@@ -708,7 +1073,99 @@
       uncertainty: 6.5
       units: Maʸʳ
 
+# Entire Creek biotite, Harts Range, Australia
+- refmatID: BtEntireCreek
+  name: Entire Creek biotite
+  description: Biotite from deformed pegmatite close to Entire Creek in the ruby mine area of the Harts Range Australia.
+  material: mica
+  aliases: [Entire Creek, EntireCreek, EntireCreekBt, ECBt]
+  notes: Used as an accuracy check reference material for Rb-Sr geochronology; isochronous; age from Mortimer et al. (1987) recalculated using the decay constant of Villa et al. (2015) doi.org/10.1016/j.gca.2015.05.025; initial Sr from whole rock TIMS data of Mortimer et al. (1987)
+  references:
+    [
+      MortimerEtAl1987 doi.org/10.1016/0024-4937(87)90029-6,
+      GlorieEtAl2024 doi.org/10.5194/gchron-6-21-2024,
+    ]
+  elemental_concentrations:
+  isotopic_abundances:
+  isotopic_ratios:
+    Sr87Sr86i:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.7148
+      uncertainty: 0.002
+      ratio_type: atomic
+    Sr86Sr87i:
+      isotope1: Sr86
+      isotope2: Sr87
+      value: 1.399
+      uncertainty: 0.003
+      ratio_type: atomic
+  age_data:
+    RbSr:
+      value: 312.1
+      uncertainty: 1.8
+      units: Maʸʳ
 
+# Robins Folly muscovite, Harts Range, Australia
+- refmatID: MsRobinsFolly
+  name: Robins Folly Muscovite
+  description: Muscovite from undeformed pegmatite close to "Robins Folly" in the ruby mine area of the Harts Range Australia.
+  material: mica
+  aliases: [Robins Folly, RobinsFolly, RobinsFollyMsc, ECMsc]
+  notes: Used as an accuracy check reference material for Rb-Sr geochronology; isochronous; age from Mortimer et al. (1987) recalculated using the decay constant of Villa et al. (2015) doi.org/10.1016/j.gca.2015.05.025; initial Sr from whole rock TIMS data of Mortimer et al. (1987)
+  references: [MortimerEtAl1987 doi.org/10.1016/0024-4937(87)90029-6]
+  elemental_concentrations:
+  isotopic_abundances:
+  isotopic_ratios:
+    Sr87Sr86i:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.7448
+      uncertainty: 0.0028
+      ratio_type: atomic
+    Sr86Sr87i:
+      isotope1: Sr86
+      isotope2: Sr87
+      value: 1.343
+      uncertainty: 0.005
+      ratio_type: atomic
+  age_data:
+    RbSr:
+      value: 328.2
+      uncertainty: 1.3
+      units: Maʸʳ
+
+# Kola biotite, assumed to be from Kovdor deposit, Kola Peninsula
+- refmatID: BtKola
+  name: Kola biotite
+  description: Biotite assumed to be from the Kovdor massif, Kola Peninsula
+  material: mica
+  aliases: [Kola, KolaBt]
+  notes: Used as the matrix correction material or as an accuracy check reference material for Rb-Sr geochronology; isochronous; expected age from apatite, baddeleyite, and Rb-Sr mineral ages of olivinite and pyroxenite; isochronous
+  references: [
+      AmelinZaitsev2002 doi.org/10.1016/S0016-7037(02)00831-1
+      ThomsonEtAl2012 doi.org/10.1029/2011GC003928,
+    ]
+  elemental_concentrations:
+  isotopic_abundances:
+  isotopic_ratios:
+    Sr87Sr86i:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.7035
+      uncertainty: 0.009
+      ratio_type: atomic
+    Sr86Sr87i:
+      isotope1: Sr86
+      isotope2: Sr87
+      value: 1.4215
+      uncertainty: 0.0182
+      ratio_type: atomic
+  age_data:
+    RbSr:
+      value: 378
+      uncertainty: 2
+      units: Maʸʳ
 #     :SolarSystem => (0.69899, 0.00005),
 #     :SolarSystemInv => (1.43063563141103, 0.00010233591549314200),
 #     :GLO => (0.707358, 0.00005),
