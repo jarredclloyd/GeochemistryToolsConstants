@@ -12,6 +12,7 @@
 
 # - refmatID: id for use as symbol (no spaces, use only standard alphanumeric characters and underscores, must start with either a letter or underscore, preface with lowercase mineral abbreviation)
 #   name: name
+#   IGSN: igsn
 #   description: description
 #   material: material type (e.g. glass, zircon, mica)
 #   aliases: [alias1, alias2]
@@ -49,6 +50,7 @@
 
 # NIST SRM 610
 - refmatID: gNISTSRM610
+  IGSN:
   name: NIST SRM 610
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
@@ -486,6 +488,7 @@
 
 # NIST SRM 612
 - refmatID: gNISTSRM612
+  IGSN:
   name: NIST SRM 612
   description: Calibration glass manufactured by Corning Glass Works in conjunction with the American Society for Testing and Materials and the National Institute of Standards and Technology (NIST, formerly National Bureau of Standards [NBS]) in 1971
   material: glass
@@ -875,10 +878,11 @@
       uncertainty: 0
       units: yr
 
-# G17560 Li-Rb mica (lepidolite), Brazil
-- refmatID: LpdG17560
+# G17560 Li-Rb mica (polylithionite), Brazil
+- refmatID: PlnG17560
+  IGSN:
   name: G17560
-  description: High rubidium mica (lepidolite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum.
+  description: High rubidium mica (polylithionite) from Itinga, Minas Gerais, Brazil. From Lithium-pegmatite, sample provided by the South Australian Museum.
   material: mica
   aliases: [G17560STD, G17560, STDG17560, G17560lep]
   notes:
@@ -972,6 +976,7 @@
 
 # MDC phlogopite, Madagascar
 - refmatID: PhlMDC
+  IGSN:
   name: MDC phlogopite
   description: Biotite (phlogopite) mica from Bekily Madagascar
   material: mica
@@ -1006,6 +1011,7 @@
 
 # Högsbo muscovite, Gothenburg, Sweden
 - refmatID: MsHogsbo
+  IGSN:
   name: Högsbo muscovite
   description: Muscovite from the Högsbo pegmatite quarry, Gothenburg, Sweden
   material: mica
@@ -1035,6 +1041,7 @@
 
 # Mica-Mg pressed nanopowder pellet
 - refmatID: pnpMicaMg
+  IGSN:
   name: Mica-Mg
   description: Nano-particulate pressed powder pellet of CRPG Mica-Mg
   material: Nano-particulate pressed powder pellet
@@ -1075,6 +1082,7 @@
 
 # Entire Creek biotite, Harts Range, Australia
 - refmatID: BtEntireCreek
+  IGSN:
   name: Entire Creek biotite
   description: Biotite from deformed pegmatite close to Entire Creek in the ruby mine area of the Harts Range Australia.
   material: mica
@@ -1108,6 +1116,7 @@
 
 # Robins Folly muscovite, Harts Range, Australia
 - refmatID: MsRobinsFolly
+  IGSN:
   name: Robins Folly Muscovite
   description: Muscovite from undeformed pegmatite close to "Robins Folly" in the ruby mine area of the Harts Range Australia.
   material: mica
@@ -1137,6 +1146,7 @@
 
 # Kola biotite, assumed to be from Kovdor deposit, Kola Peninsula
 - refmatID: BtKola
+  IGSN:
   name: Kola biotite
   description: Biotite assumed to be from the Kovdor massif, Kola Peninsula
   material: mica
