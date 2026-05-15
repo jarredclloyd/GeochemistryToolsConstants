@@ -1,0 +1,198 @@
+# SPDX-FileCopyrightText: Copyright © 2026 Jarred C Lloyd 4o8pg2v9h@mozmail.com
+#
+# SPDX-License-Identifier: MPL-2.0
+
+# Radionuclide information relevant to geochronology.
+# Units of seconds are used to minimise rounding errors during computation and enable computation of the half life/decay constant in years using a user specified year definition (e.g. tropical, IUGS annus)
+# Ensure units is in a string compatible with Unitful.jl (s or yr with standard SI prefixes e.g. Gyr)
+# Uncertainty follows that of GUM (aka the combined standard uncertainty). Coverage factor, k, is = 2.
+# beta_plus decay is considered by the NuBASE definition as such it includes electron capture and positron emission.
+
+U238:
+  reference: VillaEtAl2016 doi:10.1016/j.gca.2015.10.011
+  half_life: { value: 1.4100882408e+17, uncertainty: 3.0295296e+14, units: s }
+  decay_constant:
+    {
+      value: 4.915629820206819e-18,
+      uncertainty: 1.0561073847768829e-20,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Pb206
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+U235:
+  reference: JaffeyEtAl1971 doi:10.1103/PhysRevC.4.1889
+  half_life: { value: 2.2210554456e+16, uncertainty: 3.0295296e+13, units: s }
+  decay_constant:
+    {
+      value: 3.120800887402868e-17,
+      uncertainty: 4.2567864223394855e-20,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Pb207
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+U234:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 7.747e+12, uncertainty: 1.9e+10, units: s }
+  decay_constant:
+    {
+      value: 8.947298058086295e-14,
+      uncertainty: 2.1943805744628839e-16,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Th230
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+Pa231:
+  reference: NuBASE, KondevEtAl2021 doi:10.1016/j.gca.2015.05.025
+  half_life: { value: 1.0303e+12, uncertainty: 6.3e+9, units: s }
+  decay_constant:
+    {
+      value: 6.727624774919395e-13,
+      uncertainty: 4.1137567778309415e-15,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Ac227
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+Th232:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 4.418e+17, uncertainty: 3.2e+15, units: s }
+  decay_constant:
+    {
+      value: 1.568916207695666e-18,
+      uncertainty: 1.1363811373078612e-20,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Pb208
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+Th230:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 2.3794e+12, uncertainty: 9.5e+9, units: s }
+  decay_constant:
+    {
+      value: 2.913117510968922e-13,
+      uncertainty: 1.1630922230059998e-15,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Ra226
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+Ra226:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 5.049e+10, uncertainty: 2.2e+8, units: s }
+  decay_constant:
+    {
+      value: 1.3728405239848391e-11,
+      uncertainty: 5.981875921502567e-14,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Rn222
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+Re187:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 1.31277e+18, uncertainty: 6.3e+14, units: s }
+  decay_constant:
+    {
+      value: 5.280035197025719e-19,
+      uncertainty: 2.533895636041502e-22,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Os187
+      mode: beta_minus
+      branch: { value: 1.0, uncertainty: 0.0 }
+Lu176:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 1.1679e+18, uncertainty: 5.4e+15, units: s }
+  decay_constant:
+    {
+      value: 5.934987418100396e-19,
+      uncertainty: 2.7441503602827417e-21,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Hf176
+      mode: beta_minus
+      branch: { value: 1.0, uncertainty: 0.0 }
+Sm147:
+  reference: VillaEtAl2020 doi:10.1016/j.gca.2020.06.022
+  half_life: { value: 3.352995e+18, uncertainty: 1.1991888e+16, units: s }
+  decay_constant:
+    {
+      value: 2.0672478800593062e-19,
+      uncertainty: 7.393451241623871e-22,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Nd143
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+Sm146:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 2.15e+15, uncertainty: 2.2e+14, units: s }
+  decay_constant:
+    {
+      value: 3.2239403746974197e-16,
+      uncertainty: 3.2989157322485224e-17,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Nd142
+      mode: alpha
+      branch: { value: 1.0, uncertainty: 0.0 }
+Rb87:
+  reference: VillaEtAl2015 doi:10.1016/j.gca.2015.05.025
+  half_life: { value: 1.565572536e+18, uncertainty: 5.049216e+15, units: s }
+  decay_constant:
+    {
+      value: 4.427435743928669e-19,
+      uncertainty: 1.427917192155991e-21,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Sr87
+      mode: beta_minus
+      branch: { value: 1.0, uncertainty: 0.0 }
+K40:
+  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
+  half_life: { value: 3.9383e+16, uncertainty: 9.5e+13, units: s }
+  decay_constant:
+    {
+      value: 1.760016201304993e-17,
+      uncertainty: 4.245525712210199e-20,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Ca40
+      mode: beta_minus
+      branch: { value: 0.8928, uncertainty: 0.0013 }
+    - daughter: Ar40
+      mode: beta_plus
+      branch: { value: 0.1072, uncertainty: 0.0013 }
+K40_Kossert:
+  reference: KossertEtAl2022 doi:10.1016/j.apradiso.2022.110362
+  half_life: { value: 3.956e16, uncertainty: 8.5e13, units: s }
+  decay_constant:
+    {
+      value: 1.7521415079877282e-17,
+      uncertainty: 3.764712542440771e-20,
+      units: 1/s,
+    }
+  decays:
+    - daughter: Ca40
+      mode: beta_minus
+      branch: { value: 0.8943, uncertainty: 0.00045 }
+    - daughter: Ar40
+      mode: beta_plus
+      branch: { value: 0.1057, uncertainty: 0.00045 }
