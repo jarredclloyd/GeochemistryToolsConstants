@@ -3,196 +3,482 @@
 # SPDX-License-Identifier: MPL-2.0
 
 # Radionuclide information relevant to geochronology.
-# Units of seconds are used to minimise rounding errors during computation and enable computation of the half life/decay constant in years using a user specified year definition (e.g. tropical, IUGS annus)
+# Units of seconds are used to minimise rounding errors during computation and enable computation of the half life/decay constant in time using a user specified definition (e.g. tropical, IUGS annus)
 # Ensure units is in a string compatible with Unitful.jl (s or yr with standard SI prefixes e.g. Gyr)
 # Uncertainty follows that of GUM (aka the combined standard uncertainty). Coverage factor, k, is = 2.
-# beta_plus decay is considered by the NuBASE definition as such it includes electron capture and positron emission.
+# beta_plus decay is considered by the NUBASE2020 2020 definition as such it includes electron capture and positron emission.
 
 U238:
-  reference: VillaEtAl2016 doi:10.1016/j.gca.2015.10.011
-  half_life: { value: 1.4100882408e+17, uncertainty: 3.0295296e+14, units: s }
+  references:
+    - Jaffey et al. (1971). Phys. Rev. C, 4(5):1889–1906. https://doi.org/10.1103/PhysRevC.4.1889
+    - Steiger & Jäger (1977). Earth Planet. Sci. Lett., 36(3):359–362. https://doi.org/10.1016/0012-821X(77)90060-7
+    - Schön et al. (2004). Appl. Radiat. Isot., 60(2):263–273. https://doi.org/10.1016/j.apradiso.2003.11.027
+    - Villa et al. (2016). Geochim. Cosmochim. Acta, 172:387–392. https://doi.org/10.1016/j.gca.2015.10.011
+    - Villa et al. (2022). Pure Appl. Chem., 94(9):1085–1092. https://doi.org/10.1515/pac-2021-1202
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 4.915629820206819e-18,
-      uncertainty: 1.0561073847768829e-20,
-      units: 1/s,
-    }
+    adopted: # IUGS2022
+      {
+        value: 4.915629820206819e-18,
+        uncertainty: 1.0561073847768829e-20,
+        units: s^-1,
+      }
+    IUGS2022:
+      {
+        value: 4.915629820206819e-18,
+        uncertainty: 1.0561073847768829e-20,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 4.921572450952529e-18,
+        uncertainty: 3.3082494628854108e-21,
+        units: s^-1,
+      }
+    IUGS1977:
+      {
+        value: 4.915629820206818e-18,
+        uncertainty: 5.280536923884414e-21,
+        units: s^-1,
+      }
   decays:
     - daughter: Pb206
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 U235:
-  reference: JaffeyEtAl1971 doi:10.1103/PhysRevC.4.1889
-  half_life: { value: 2.2210554456e+16, uncertainty: 3.0295296e+13, units: s }
+  references:
+    - Jaffey et al. (1971). Phys. Rev. C, 4(5):1889–1906. https://doi.org/10.1103/PhysRevC.4.1889
+    - Steiger & Jäger (1977). Earth Planet. Sci. Lett., 36(3):359–362. https://doi.org/10.1016/0012-821X(77)90060-7
+    - Schön et al. (2004). Appl. Radiat. Isot., 60(2):263–273. https://doi.org/10.1016/j.apradiso.2003.11.027
+    - Villa et al. (2016). Geochim. Cosmochim. Acta, 172:387–392. https://doi.org/10.1016/j.gca.2015.10.011
+    - Villa et al. (2022). Pure Appl. Chem., 94(9):1085–1092. https://doi.org/10.1515/pac-2021-1202- Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 3.120800887402868e-17,
-      uncertainty: 4.2567864223394855e-20,
-      units: 1/s,
-    }
+    adopted: # IUGS2022
+      {
+        value: 3.1208675970652617e-17,
+        uncertainty: 8.513754829237015e-20,
+        units: s^-1,
+      }
+    IUGS2022:
+      {
+        value: 3.1208675970652617e-17,
+        uncertainty: 8.513754829237015e-20,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 3.120025262585389e-17,
+        uncertainty: 4.4318540661724274e-20,
+        units: s^-1,
+      }
+    IUGS1977:
+      {
+        value: 3.120800887402868e-17,
+        uncertainty: 4.2567864223394855e-20,
+        units: s^-1,
+      }
   decays:
     - daughter: Pb207
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 U234:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 7.747e+12, uncertainty: 1.9e+10, units: s }
+  references:
+    - Cheng et al. (2013). Earth Planet. Sci. Lett., 371-372:82-91. https://doi.org/10.1016/j.epsl.2013.04.006
+    - Villa et al. (2016). Geochim. Cosmochim. Acta, 172:387–392. https://doi.org/10.1016/j.gca.2015.10.011
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
+    - Villa et al. (2022). Pure Appl. Chem., 94(9):1085–1092. https://doi.org/10.1515/pac-2021-1202
   decay_constant:
-    {
-      value: 8.947298058086295e-14,
-      uncertainty: 2.1943805744628839e-16,
-      units: 1/s,
-    }
+    adopted: # IUGS2022 provisional value
+      {
+        value: 8.959523021112237e-14,
+        uncertainty: 2.23405794467757e-16,
+        units: s^-1,
+      }
+    ChengEtAl2013:
+      {
+        value: 8.942759664335861e-14,
+        uncertainty: 9.570007082164909e-17,
+        units: s^-1,
+      }
+    IUGS2022: # provisional value
+      {
+        value: 8.959523021112237e-14,
+        uncertainty: 2.23405794467757e-16,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 8.947037820204129e-14,
+        uncertainty: 2.186648754428708e-16,
+        units: s^-1,
+      }
   decays:
     - daughter: Th230
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 Pa231:
-  reference: NuBASE, KondevEtAl2021 doi:10.1016/j.gca.2015.05.025
-  half_life: { value: 1.0303e+12, uncertainty: 6.3e+9, units: s }
+  references:
+    - Jerome et al. (2020). Appl. Radiat. Isot., 155:108837. https://doi.org/10.1016/j.apradiso.2019.108837
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 6.727624774919395e-13,
-      uncertainty: 4.1137567778309415e-15,
-      units: 1/s,
-    }
+    adopted:
+      {
+        value: 6.743332819923584e-13,
+        uncertainty: 5.379446358923378e-15,
+        units: s^-1,
+      }
+    JeromeEtAl2020:
+      {
+        value: 6.743332819923584e-13,
+        uncertainty: 5.379446358923378e-15,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 6.727405160367882e-13,
+        uncertainty: 4.1209219971625615e-15,
+        units: s^-1,
+      }
   decays:
     - daughter: Ac227
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 Th232:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 4.418e+17, uncertainty: 3.2e+15, units: s }
+  references:
+    - Steiger & Jäger (1977). Earth Planet. Sci. Lett., 36(3):359–362. https://doi.org/10.1016/0012-821X(77)90060-7
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 1.568916207695666e-18,
-      uncertainty: 1.1363811373078612e-20,
-      units: 1/s,
-    }
+    adopted: # IUGS1977
+      {
+        value: 1.567768144599082e-18,
+        uncertainty: 1.567768144599082e-20,
+        units: s^-1,
+      }
+    IUGS1977:
+      {
+        value: 1.567768144599082e-18,
+        uncertainty: 1.567768144599082e-20,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 1.5689269891857954e-18,
+        uncertainty: 1.120662135132711e-20,
+        units: s^-1,
+      }
   decays:
     - daughter: Pb208
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 Th230:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 2.3794e+12, uncertainty: 9.5e+9, units: s }
+  references:
+    - Cheng et al. (2013). Earth Planet. Sci. Lett., 371-372:82-91. https://doi.org/10.1016/j.epsl.2013.04.006
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 2.913117510968922e-13,
-      uncertainty: 1.1630922230059998e-15,
-      units: 1/s,
-    }
+    adopted: # Cheng et al. 2013
+      {
+        value: 2.9060354353970436e-16,
+        uncertainty: 2.9060354353970436e-16,
+        units: s^-1,
+      }
+    ChengEtAl2013:
+      {
+        value: 2.9060354353970436e-16,
+        uncertainty: 2.9060354353970436e-16,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 2.913127035623493e-13,
+        uncertainty: 1.1590691123170396e-15,
+        units: s^-1,
+      }
   decays:
     - daughter: Ra226
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 Ra226:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 5.049e+10, uncertainty: 2.2e+8, units: s }
+  references:
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 1.3728405239848391e-11,
-      uncertainty: 5.981875921502567e-14,
-      units: 1/s,
-    }
+    adopted: # NUBASE2020
+      {
+        value: 1.3728405239848391e-11,
+        uncertainty: 5.981875921502567e-14,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 1.3728405239848391e-11,
+        uncertainty: 5.981875921502567e-14,
+        units: s^-1,
+      }
   decays:
     - daughter: Rn222
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 Re187:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 1.31277e+18, uncertainty: 6.3e+14, units: s }
+  references:
+    - Smoliar et al. (1996). Science, 271(5252), 1099–1102. https://doi.org/10.1126/science.271.5252.1099
+    - Selby et al (2007). Geochim. et Cosmochim. Acta, 71(8):1999–2013. https://doi.org/10.1016/j.gca.2007.01.008
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 5.280035197025719e-19,
-      uncertainty: 2.533895636041502e-22,
-      units: 1/s,
-    }
+    adopted: # Smoliar et al. 1996
+      {
+        value: 5.279348277777065e-19,
+        uncertainty: 5.279348277777065e-19,
+        units: s^-1,
+      }
+    SelbyEtAl2007:
+      {
+        value: 5.281883378990884e-19,
+        uncertainty: 1.0774180158728703e-21,
+        units: s^-1,
+      }
+    SmoliarEtAl1996:
+      {
+        value: 5.279348277777065e-19,
+        uncertainty: 5.279348277777065e-19,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 5.280035197025719e-19,
+        uncertainty: 2.533895636041502e-22,
+        units: s^-1,
+      }
   decays:
     - daughter: Os187
       mode: beta_minus
       branch: { value: 1.0, uncertainty: 0.0 }
 Lu176:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 1.1679e+18, uncertainty: 5.4e+15, units: s }
+  references:
+    - Söderlund et al. (2004). Earth Planet. Sci. Lett., 219(3), 311–324. https://doi.org/10.1016/S0012-821X(04)00012-3
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 5.934987418100396e-19,
-      uncertainty: 2.7441503602827417e-21,
-      units: 1/s,
-    }
+    adopted: # Soderlund et a;. 2004
+      {
+        value: 5.916165994879204e-19,
+        uncertainty: 2.5350470251223157e-21,
+        units: s^-1,
+      }
+    HultEtAl2014:
+      {
+        value: 5.900281475434803e-19,
+        uncertainty: 4.596345737975375e-21,
+        units: s^-1,
+      }
+    SoderlundEtAl2004:
+      {
+        value: 5.916165994879204e-19,
+        uncertainty: 2.5350470251223157e-21,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 5.934876478951942e-19,
+        uncertainty: 2.7260983556385578e-21,
+        units: s^-1,
+      }
+
   decays:
     - daughter: Hf176
       mode: beta_minus
       branch: { value: 1.0, uncertainty: 0.0 }
 Sm147:
-  reference: VillaEtAl2020 doi:10.1016/j.gca.2020.06.022
-  half_life: { value: 3.352995e+18, uncertainty: 1.1991888e+16, units: s }
+  references:
+    - Villa et al. (2020). Geochim. et Cosmochim. Acta, 285:70–77. https://doi.org/10.1016/j.gca.2020.06.022
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
+    - Villa et al. (2022). Pure Appl. Chem., 94(9):1085–1092. https://doi.org/10.1515/pac-2021-1202
   decay_constant:
-    {
-      value: 2.0672478800593062e-19,
-      uncertainty: 7.393451241623871e-22,
-      units: 1/s,
-    }
+    adopted: # IUGS2022
+      {
+        value: 2.0673750398690024e-19,
+        uncertainty: 7.605303641455558e-22,
+        units: s^-1,
+      }
+    IUGS2022:
+      {
+        value: 2.0673750398690024e-19,
+        uncertainty: 7.605303641455558e-22,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 2.060504488611739e-19,
+        uncertainty: 9.664655199867445e-22,
+        units: s^-1,
+      }
   decays:
     - daughter: Nd143
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 Sm146:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 2.15e+15, uncertainty: 2.2e+14, units: s }
+  references:
+    - Meissner et al. (1987). Z. Phys. At. Nucl., 327(2):171–174. https://doi.org/10.1007/BF01292406
+    - Villa et al. (2020). Geochim. et Cosmochim. Acta, 285:70–77. https://doi.org/10.1016/j.gca.2020.06.022
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
+    - Villa et al. (2022). Pure Appl. Chem., 94(9):1085–1092. https://doi.org/10.1515/pac-2021-1202
   decay_constant:
-    {
-      value: 3.2239403746974197e-16,
-      uncertainty: 3.2989157322485224e-17,
-      units: 1/s,
-    }
+    adopted: # Meissner et al 1997 - note it should be calculated using both values
+      {
+        value: 2.1304082178108757e-16,
+        uncertainty: 9.298580970076568e-18,
+        units: s^-1,
+      }
+    Meissner:
+      {
+        value: 2.1304082178108757e-16,
+        uncertainty: 9.298580970076568e-18,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 3.230143801264873e-16,
+        uncertainty: 3.32514803071384e-17,
+        units: s^-1,
+      }
   decays:
     - daughter: Nd142
       mode: alpha
       branch: { value: 1.0, uncertainty: 0.0 }
 Rb87:
-  reference: VillaEtAl2015 doi:10.1016/j.gca.2015.05.025
-  half_life: { value: 1.565572536e+18, uncertainty: 5.049216e+15, units: s }
+  references:
+    - Steiger & Jäger (1977). Earth Planet. Sci. Lett., 36(3):359–362. https://doi.org/10.1016/0012-821X(77)90060-7
+    - Villa et al. (2015). Geochim. Cosmochim. Acta, 164:382–385. https://doi.org/10.1016/j.gca.2015.05.025
+    - Villa et al. (2022). Pure Appl. Chem., 94(9):1085–1092. https://doi.org/10.1515/pac-2021-1202
   decay_constant:
-    {
-      value: 4.427435743928669e-19,
-      uncertainty: 1.427917192155991e-21,
-      units: 1/s,
-    }
+    adopted: # IUGS2022
+      {
+        value: 4.427554269934043e-19,
+        uncertainty: 1.4259944327729167e-21,
+        units: s^-1,
+      }
+    IUGS2022:
+      {
+        value: 4.427554269934043e-19,
+        uncertainty: 1.4259944327729167e-21,
+        units: s^-1,
+      }
+    IUGS1977:
+      {
+        value: 4.499804654527871e-19,
+        uncertainty: 4.4998046545278704e-21,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 4.41951264559379e-19,
+        uncertainty: 2.6677138705797522e-21,
+        units: s^-1,
+      }
   decays:
     - daughter: Sr87
       mode: beta_minus
       branch: { value: 1.0, uncertainty: 0.0 }
 K40:
-  reference: NuBASE, KondevEtAl2021 doi:10.1088/1674-1137/abddae
-  half_life: { value: 3.9383e+16, uncertainty: 9.5e+13, units: s }
+  references:
+    - Beckinsale et al. (1969). Earth Planet. Sci. Lett., 6(4):289–294. https://doi.org/10.1016/0012-821X(69)90170-8
+    - Steiger & Jäger (1977). Earth Planet. Sci. Lett., 36(3):359–362. https://doi.org/10.1016/0012-821X(77)90060-7
+    - Renne et al. (2010). Geochim. Cosmochim. Acta, 74(18):5349–5367. https://doi.org/10.1016/j.gca.2010.06.017
+    - Naumenko-Dèzes et al. (2018). Geochim. Cosmochim. Acta, 220:235–247. https://doi.org/10.1016/j.gca.2017.09.041
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
+    - Kossert et al. (2022). Appl. Radiat. Isot., 188:110362. https://doi.org/10.1016/j.apradiso.2022.110362
+    - Hariasz et al. (2023). Phys. Rev. C, 108(1):14327. https://doi.org/10.1103/PhysRevC.108.014327
+    - Stukel et al. (2023). Phys. Rev. Lett., 131(5):52503. https://doi.org/10.1103/PhysRevLett.131.052503
+    - Carter et al. (2025). Geochim. Cosmochim. Acta, 397:149–163. https://doi.org/10.1016/j.gca.2025.03.024
   decay_constant:
-    {
-      value: 1.760016201304993e-17,
-      uncertainty: 4.245525712210199e-20,
-      units: 1/s,
-    }
+    adopted: # Carter et al. 2025
+      {
+        value: 1.7442138242489144e-17,
+        uncertainty: 1.7219412275335298e-20,
+        units: s^-1,
+      }
+    CarterEtAl2025:
+      {
+        value: 1.7442138242489144e-17,
+        uncertainty: 1.7219412275335298e-20,
+        units: s^-1,
+      }
+    KossertEtAl2022:
+      {
+        value: 1.744212981961551e-17,
+        uncertainty: 3.4223865784645814e-20,
+        units: s^-1,
+      }
+    RenneEtAl2011:
+      {
+        value: 1.752547157877915e-17,
+        uncertainty: 8.552914541557849e-20,
+        units: s^-1,
+      }
+    IUGS1977:
+      {
+        value: 1.7564707075316247e-17,
+        uncertainty: 3.1688087814028946e-20,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 1.7600142506891937e-17,
+        uncertainty: 4.230803487233639e-20,
+        units: s^-1,
+      }
+    NaumenkoDezesEtAl2018:
+      {
+        value: 1.740030095634686e-17,
+        uncertainty: 2.2182135620912292e-20,
+        units: s^-1,
+      }
   decays:
+    # IUGD_1977/NUBASE
+    # - daughter: Ca40
+    #   mode: beta_minus
+    #   branch: { value: 0.8928, uncertainty: 0.0013 }
+    # - daughter: Ar40
+    #   mode: beta_plus
+    #   branch: { value: 0.1072, uncertainty: 0.0013 }
+    # KDK Collaboration
+    # - daughter: Ca40
+    #   mode: beta_minus
+    #   branch: { value: 0.8959, uncertainty: 0.001 }
+    # - daughter: Ar40
+    #   mode: beta_plus
+    #   branch: { value: 0.1041, uncertainty: 0.001 }
+    # Naumenko-Dèzes et al. 2018
     - daughter: Ca40
       mode: beta_minus
-      branch: { value: 0.8928, uncertainty: 0.0013 }
+      branch: { value: 0.8944, uncertainty: 0.0019 }
     - daughter: Ar40
       mode: beta_plus
-      branch: { value: 0.1072, uncertainty: 0.0013 }
-K40_Kossert:
-  reference: KossertEtAl2022 doi:10.1016/j.apradiso.2022.110362
-  half_life: { value: 3.956e16, uncertainty: 8.5e13, units: s }
+      branch: { value: 0.1056, uncertainty: 0.0019 }
+La138:
+  references:
+    # -
+    - Kondev et al. (2021). Chin. Phys. C, 45(3):30001. https://doi.org/10.1088/1674-1137/abddae
   decay_constant:
-    {
-      value: 1.7521415079877282e-17,
-      uncertainty: 3.764712542440771e-20,
-      units: 1/s,
-    }
+    adopted:
+      {
+        value: 2.1326538961248294e-19,
+        uncertainty: 4.119539472455094e-21,
+        units: s^-1,
+      }
+    McDonoughEtAl2020:
+      {
+        value: 2.1326538961248294e-19,
+        uncertainty: 4.119539472455094e-21,
+        units: s^-1,
+      }
+    NUBASE2020:
+      {
+        value: 2.1325221212234115e-19,
+        uncertainty: 2.0704098264304966e-21,
+        units: s^-1,
+      }
   decays:
-    - daughter: Ca40
-      mode: beta_minus
-      branch: { value: 0.8943, uncertainty: 0.00045 }
-    - daughter: Ar40
+    - daughter: Ba138
       mode: beta_plus
-      branch: { value: 0.1057, uncertainty: 0.00045 }
+      branch: { value: 0.655, uncertainty: 0.004 }
+    - daughter: Ce138
+      mode: beta_minus
+      branch: { value: 0.345, uncertainty: 0.004 }
