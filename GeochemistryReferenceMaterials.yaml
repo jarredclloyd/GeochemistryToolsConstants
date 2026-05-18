@@ -1045,7 +1045,7 @@
   name: Mica-Mg
   description: Nano-particulate pressed powder pellet of CRPG Mica-Mg
   material: Nano-particulate pressed powder pellet
-  aliases: [MicaMg, MicaMg-NP, Mica-Mg, Mica-Mg-NP]
+  aliases: [MicaMg, MicaMg-NP, Mica-Mg, Mica-Mg-NP, Mica Mg]
   notes: Used as a reference material for Rb-Sr geochronology; is homogenous at nanogram scale
   references:
     [
@@ -1120,7 +1120,7 @@
   name: Robins Folly Muscovite
   description: Muscovite from undeformed pegmatite close to "Robins Folly" in the ruby mine area of the Harts Range Australia.
   material: mica
-  aliases: [Robins Folly, RobinsFolly, RobinsFollyMsc, ECMsc]
+  aliases: [Robins Folly, RobinsFolly, RobinsFollyMsc, RFMsc]
   notes: Used as an accuracy check reference material for Rb-Sr geochronology; isochronous; age from Mortimer et al. (1987) recalculated using the decay constant of Villa et al. (2015) doi.org/10.1016/j.gca.2015.05.025; initial Sr from whole rock TIMS data of Mortimer et al. (1987)
   references: [MortimerEtAl1987 doi.org/10.1016/0024-4937(87)90029-6]
   elemental_concentrations:
@@ -1150,7 +1150,7 @@
   name: Kola biotite
   description: Biotite assumed to be from the Kovdor massif, Kola Peninsula
   material: mica
-  aliases: [Kola, KolaBt]
+  aliases: [Kola, KolaBt, KolaPhl, PhlKola]
   notes: Used as the matrix correction material or as an accuracy check reference material for Rb-Sr geochronology; isochronous; expected age from apatite, baddeleyite, and Rb-Sr mineral ages of olivinite and pyroxenite; isochronous
   references: [
       AmelinZaitsev2002 doi.org/10.1016/S0016-7037(02)00831-1
