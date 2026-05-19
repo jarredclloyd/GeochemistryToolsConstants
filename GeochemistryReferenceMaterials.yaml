@@ -1176,6 +1176,307 @@
       value: 378
       uncertainty: 2
       units: Maʸʳ
+
+# BCR-2G
+- refmatID: gBCR2G
+  name: BCR-2g (Columbia River Basalt Glass)
+  IGSN:
+  description: Natural glass, basaltic composition
+  material: glass
+  aliases: [BCR2G, BCR-2G]
+  notes: BCR-2g and BCR-2ga are assumed to be identical
+  references:
+    - United States Geological Survey (2022). Reference Material Information Sheet. https://www.usgs.gov/media/files/bcr-2g-microanalysis-reference-material-information-sheet,
+    - Jochum et al. (2005). Geostand. Geoanal. Res., 29(3):285–302. https://doi.org/10.1111/j.1751-908X.2005.tb00901.x
+
+  elemental_concentrations:
+    Ag:
+      value: 0.5
+      uncertainty: 0.4
+      units: μg/g
+    Al:
+      value: 70913
+      uncertainty: 0
+      units: μg/g
+    Ba:
+      value: 683.0
+      uncertainty: 7.0
+      units: μg/g
+    Be:
+      value: 2.3
+      uncertainty: 0.4
+      units: μg/g
+    Bi:
+      value: 0.05
+      uncertainty: 0.01
+      units: μg/g
+    Ca:
+      value: 50429
+      uncertainty: 0
+      units: μg/g
+    Cd:
+      value: 0.2
+      uncertainty: 0
+      units: μg/g
+    Ce:
+      value: 53.3
+      uncertainty: 0.5
+      units: μg/g
+    Co:
+      value: 38.0
+      uncertainty: 2.0
+      units: μg/g
+    Cr:
+      value: 17.0
+      uncertainty: 2.0
+      units: μg/g
+    Cs:
+      value: 1.16
+      uncertainty: 0.07
+      units: μg/g
+    Cu:
+      value: 21.0
+      uncertainty: 5.0
+      units: μg/g
+    Dy:
+      value: 6.44
+      uncertainty: 0.06
+      units: μg/g
+    Er:
+      value: 3.7
+      uncertainty: 0.04
+      units: μg/g
+    Eu:
+      value: 1.97
+      uncertainty: 0.02
+      units: μg/g
+    Fe:
+      value: 96385
+      uncertainty: 0
+      units: μg/g
+    Ga:
+      value: 23.0
+      uncertainty: 1.0
+      units: μg/g
+    Gd:
+      value: 6.71
+      uncertainty: 0.07
+      units: μg/g
+    Ge:
+      value: 1.5
+      uncertainty: 0.1
+      units: μg/g
+    Hf:
+      value: 4.84
+      uncertainty: 0.28
+      units: μg/g
+    Ho:
+      value: 1.27
+      uncertainty: 0.08
+      units: μg/g
+    In:
+      value: 0.11
+      uncertainty: 0.02
+      units: μg/g
+    K:
+      value: 14900.0
+      uncertainty: 150.0
+      units: μg/g
+    La:
+      value: 24.7
+      uncertainty: 0.3
+      units: μg/g
+    Li:
+      value: 9.0
+      uncertainty: 1.0
+      units: μg/g
+    Lu:
+      value: 0.503
+      uncertainty: 0.005
+      units: μg/g
+    Mg:
+      value: 21467
+      uncertainty: 0
+      units: μg/g
+    Mn:
+      value: 1550.0
+      uncertainty: 70.0
+      units: μg/g
+    Mo:
+      value: 270.0
+      uncertainty: 30.0
+      units: μg/g
+    Na:
+      value: 23962
+      uncertainty: 0
+      units: μg/g
+    Nb:
+      value: 12.5
+      uncertainty: 1.0
+      units: μg/g
+    Nd:
+      value: 28.9
+      uncertainty: 0.3
+      units: μg/g
+    Ni:
+      value: 13.0
+      uncertainty: 2.0
+      units: μg/g
+    P:
+      value: 1615
+      uncertainty: 0
+      units: μg/g
+    Pb:
+      value: 11.0
+      uncertainty: 1.0
+      units: μg/g
+    Pr:
+      value: 6.7
+      uncertainty: 0.4
+      units: μg/g
+    Pt:
+      value: 0.78
+      uncertainty: 0.6
+      units: μg/g
+    Rb:
+      value: 47.0
+      uncertainty: 0.5
+      units: μg/g
+    Re:
+      value: 0.0062
+      uncertainty: 0.0007
+      units: μg/g
+    Sb:
+      value: 0.35
+      uncertainty: 0.08
+      units: μg/g
+    Sc:
+      value: 33.0
+      uncertainty: 2.0
+      units: μg/g
+    Si:
+      value: 254270
+      uncertainty: 0
+      units: μg/g
+    Sm:
+      value: 6.59
+      uncertainty: 0.07
+      units: μg/g
+    Sn:
+      value: 2.6
+      uncertainty: 0.4
+      units: μg/g
+    Sr:
+      value: 342.0
+      uncertainty: 4.0
+      units: μg/g
+    Ta:
+      value: 0.78
+      uncertainty: 0.06
+      units: μg/g
+    Tb:
+      value: 1.02
+      uncertainty: 0.08
+      units: μg/g
+    Th:
+      value: 5.9
+      uncertainty: 0.3
+      units: μg/g
+    Ti:
+      value: 14100.0
+      uncertainty: 1000.0
+      units: μg/g
+    Tl:
+      value: 0.3
+      uncertainty: 0.1
+      units: μg/g
+    Tm:
+      value: 0.51
+      uncertainty: 0.04
+      units: μg/g
+    U:
+      value: 1.69
+      uncertainty: 0.12
+      units: μg/g
+    V:
+      value: 425.0
+      uncertainty: 18.0
+      units: μg/g
+    W:
+      value: 0.5
+      uncertainty: 0.07
+      units: μg/g
+    Y:
+      value: 35.0
+      uncertainty: 3.0
+      units: μg/g
+    Yb:
+      value: 3.39
+      uncertainty: 0.03
+      units: μg/g
+    Zn:
+      value: 125.0
+      uncertainty: 5.0
+      units: μg/g
+    Zr:
+      value: 184.0
+      uncertainty: 15.0
+      units: μg/g
+  isotopic_abundances:
+  isotopic_ratios:
+    Pb206Pb204:
+      isotope1: Pb206
+      isotope2: Pb204
+      value: 18.765
+      uncertainty: 0
+      ratio_type: atomic
+    Pb207Pb204:
+      isotope1: Pb207
+      isotope2: Pb204
+      value: 15.626
+      uncertainty: 0
+      ratio_type: atomic
+    Pb207Pb206:
+      isotope1: Pb207
+      isotope2: Pb206
+      value: 0.833
+      uncertainty: 0
+      ratio_type: atomic
+    Pb208Pb204:
+      isotope1: Pb208
+      isotope2: Pb204
+      value: 38.73
+      uncertainty: 0
+      ratio_type: atomic
+    Pb208Pb206:
+      isotope1: Pb208
+      isotope2: Pb206
+      value: 2.066
+      uncertainty: 0
+      ratio_type: atomic
+    Th230Th232:
+      isotope1: Th230
+      isotope2: Th232
+      value: 4.724e-06
+      uncertainty: 0
+      ratio_type: atomic
+    U234U238:
+      isotope1: U234
+      isotope2: U238
+      value: 5.493e-05
+      uncertainty: 0
+      ratio_type: atomic
+    Sr87Sr86:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.705003
+      uncertainty: 0
+      ratio_type: atomic
+  age_data:
+    eruption:
+      value: 16.15
+      uncertainty: 0.5
+      units: Maʸʳ
 #     :SolarSystem => (0.69899, 0.00005),
 #     :SolarSystemInv => (1.43063563141103, 0.00010233591549314200),
 #     :GLO => (0.707358, 0.00005),
