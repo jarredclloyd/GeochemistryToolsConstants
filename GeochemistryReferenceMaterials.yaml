@@ -889,8 +889,8 @@
   references:
   elemental_concentrations:
     Li:
-      value: 21683.4
-      uncertainty: 645.35
+      value: 23332.532
+      uncertainty: 151.96
       units: μg/g
     Be:
       value: 27.2
@@ -901,77 +901,81 @@
       uncertainty: 8.75
       units: μg/g
     Na:
-      value: 2513.6
-      uncertainty: 42.445
+      value: 2601.10
+      uncertainty: 51.72
       units: μg/g
     Al:
-      value: 143414.0
-      uncertainty: 3509.87
+      value: 143463.992
+      uncertainty: 346.1465G
       units: μg/g
     Si:
-      value: 228274.0
-      uncertainty: 792.24
+      value: 229556.79
+      uncertainty: 431.88
       units: μg/g
     P:
-      value: 112.1
-      uncertainty: 5.08
+      value: 110.15
+      uncertainty: 1.085
       units: μg/g
     K:
-      value: 72284.94
-      uncertainty: 778.62
+      value: 82117.04 # LAICPMS:83055.691
+      uncertainty: 279.8665 # LAICPMS:814.103
       units: μg/g
     Ti:
-      value: 45.71
-      uncertainty: 3.215
+      value: 42.0
+      uncertainty: 0.66
       units: μg/g
     Mn:
-      value: 1960.8
-      uncertainty: 105.5
-      units: μg/g
-    Zn:
-      value: 23.68
-      uncertainty: 1.045
+      value: 2081.378
+      uncertainty: 21.108
       units: μg/g
     Rb:
-      value: 14176.2
-      uncertainty: 329.21
+      value: 16211.09 # LAICPMS:14948.184; EPMA:16187.94
+      uncertainty: 14.7986 # LAICPMS:229.867; EPMA:231.42
+      units: μg/g
+    Sr:
+      value: 31.12 # LAICPMS:28.06
+      uncertainty: 0.043 # LAICPMS:0.27
       units: μg/g
     Cs:
       value: 2349.38
       uncertainty: 100.92
       units: μg/g
     Ta:
-      value: 129.72
-      uncertainty: 9.425
+      value: 124.48
+      uncertainty: 4.565
       units: μg/g
     W:
       value: 101.3
       uncertainty: 7.1
       units: μg/g
+    F:
+      value: 65592.79
+      uncertainty: 470.5757
+      units: μg/g
   isotopic_abundances:
     Sr88:
-      value: 0.009662
-      uncertainty: 0
+      value: 0.00995
+      uncertainty: 0.00032
     Sr87:
-      value: 0.989119
-      uncertainty: 0
+      value: 0.98879
+      uncertainty: 0.00036
     Sr86:
-      value: 0.001154
-      uncertainty: 0
+      value: 0.001188
+      uncertainty: 4.5e-5
     Sr84:
-      value: 0.000066
-      uncertainty: 0
+      value: 6.75e-5
+      uncertainty: 3.2e-6
   isotopic_ratios:
     Rb87Sr87:
       isotope1: Rb87
       isotope2: Sr87
-      value: 144.889
-      uncertainty: 0.137
+      value: 144.7045
+      uncertainty: 0.1732 # 6.6214 - including all known systematic sources of uncertainty
       ratio_type: atomic
   age_data:
     RbSr:
-      value: 492.28
-      uncertainty: 0.535
+      value: 492.9
+      uncertainty: 0.59
       units: Maʸʳ
 
 # MDC phlogopite, Madagascar
