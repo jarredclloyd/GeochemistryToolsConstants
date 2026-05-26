@@ -906,7 +906,7 @@
       units: μg/g
     Al:
       value: 143463.992
-      uncertainty: 346.1465G
+      uncertainty: 346.1465
       units: μg/g
     Si:
       value: 229556.79
