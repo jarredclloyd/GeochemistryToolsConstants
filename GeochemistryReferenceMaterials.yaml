@@ -929,12 +929,12 @@
       uncertainty: 21.108
       units: μg/g
     Rb:
-      value: 16211.09 # LAICPMS:14948.184; EPMA:16187.94
-      uncertainty: 14.7986 # LAICPMS:229.867; EPMA:231.42
+      value: 16211.09 # EPMA:16187.94
+      uncertainty: 14.7986 # EPMA:231.42
       units: μg/g
     Sr:
-      value: 31.12 # LAICPMS:28.06
-      uncertainty: 0.043 # LAICPMS:0.27
+      value: 31.12
+      uncertainty: 0.043
       units: μg/g
     Cs:
       value: 2349.38
@@ -969,13 +969,13 @@
     Rb87Sr87:
       isotope1: Rb87
       isotope2: Sr87
-      value: 145.08
-      uncertainty: 0.1736 # 4.67 - including all known systematic sources of uncertainty
+      value: 145.07
+      uncertainty: 0.1736 # 2.142 - including all known systematic sources of uncertainty
       ratio_type: atomic
   age_data:
     RbSr:
-      value: 491.63
-      uncertainty: 0.59
+      value: 491.66
+      uncertainty: 0.586 # 7.405 - including all known systematic sources of uncertainty
       units: Maʸʳ
 
 # MDC phlogopite, Madagascar
