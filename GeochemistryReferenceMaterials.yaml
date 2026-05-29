@@ -969,12 +969,12 @@
     Rb87Sr87:
       isotope1: Rb87
       isotope2: Sr87
-      value: 144.7045
-      uncertainty: 0.1732 # 6.6214 - including all known systematic sources of uncertainty
+      value: 145.08
+      uncertainty: 0.1736 # 4.67 - including all known systematic sources of uncertainty
       ratio_type: atomic
   age_data:
     RbSr:
-      value: 492.9
+      value: 491.63
       uncertainty: 0.59
       units: Maʸʳ
 
