@@ -1166,19 +1166,19 @@
     Sr87Sr86i:
       isotope1: Sr87
       isotope2: Sr86
-      value: 0.7035
-      uncertainty: 0.009
+      value: 0.70370
+      uncertainty: 0.0009
       ratio_type: atomic
     Sr86Sr87i:
       isotope1: Sr86
       isotope2: Sr87
-      value: 1.4215
-      uncertainty: 0.0182
+      value: 1.4211
+      uncertainty: 0.0018
       ratio_type: atomic
   age_data:
     RbSr:
       value: 378
-      uncertainty: 2
+      uncertainty: 1.5
       units: Maʸʳ
 
 # BCR-2G
