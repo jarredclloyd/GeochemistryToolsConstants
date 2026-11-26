@@ -1481,12 +1481,36 @@
       value: 16.15
       uncertainty: 0.5
       units: Maʸʳ
+
+# La Posta biotite
+- refmatID: BtLaPosta
+  IGSN:
+  name: La Posta biotite
+  description: Biotite from the La Posta biotite intrusion, Peninsular Ranges batholiths, California
+  material: mica
+  aliases: [LaPosta, La Posta, La Posta Bt, LaPostaBt]
+  notes: Used as the matrix correction material or as an accuracy check reference material for Rb-Sr geochronology; isochronous.
+  references: [
+      OlierookEtAl2026 doi.org/10.1111/ggr.70061
+    ]
+  elemental_concentrations:
+  isotopic_abundances:
+  isotopic_ratios:
+    Sr87Sr86i:
+      isotope1: Sr87
+      isotope2: Sr86
+      value: 0.70495
+      uncertainty: 0.00019
+      ratio_type: atomic
+  age_data:
+    RbSr:
+      value: 91.30
+      uncertainty: 0.25
+      units: Maʸʳ
 #     :SolarSystem => (0.69899, 0.00005),
 #     :SolarSystemInv => (1.43063563141103, 0.00010233591549314200),
 #     :GLO => (0.707358, 0.00005),
 #     :GLOInv => (1.41371130318735, 0.00009992898243798420),
-#     :LaPosta => (0.70483, 0.00005),
-#     :LaPostaInv => (1.41878183391739, 0.00010064709461270000),
 #     :MtDromedary => (0.7049, 0.00005),
 #     :MtDromedaryInv => (1.41864094197758, 0.00010062710611275200),
 #     :WilsonsProm => (0.71, 0.00005),
