@@ -1133,19 +1133,19 @@
     Sr87Sr86i:
       isotope1: Sr87
       isotope2: Sr86
-      value: 0.7448
+      value: 0.7445
       uncertainty: 0.0028
       ratio_type: atomic
     Sr86Sr87i:
       isotope1: Sr86
       isotope2: Sr87
-      value: 1.343
-      uncertainty: 0.005
+      value: 1.3432
+      uncertainty: 0.0051
       ratio_type: atomic
   age_data:
     RbSr:
-      value: 328.2
-      uncertainty: 1.3
+      value: 320
+      uncertainty: 22
       units: Maʸʳ
 
 # Kola biotite, assumed to be from Kovdor deposit, Kola Peninsula
